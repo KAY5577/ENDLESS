@@ -1,0 +1,70 @@
+body{
+  background-color: white;
+}
+
+.My_favorite_title{
+  width:1200px;
+  margin:0 auto;
+  font-size:36px;
+  font-weight: bold;
+  color: black;
+  /* border:1px solid blue; */
+  /* background-color: lightblue; */
+  padding-top: 100px;
+  padding-bottom: 10px;
+  padding-left: 37px;
+}
+
+.My_favorite{
+  margin: 0 auto;
+  box-sizing: border-box;
+  width:1200px;
+  /* height:200px; */
+  /* background-color: pink; */
+}
+
+/* ==================每一件外框==================== */
+
+.My_favorite> .favorite_01{
+  width:23%;
+  /* background-color: lightgreen; */
+  /* border:1px solid black; */
+  display: inline-block;
+  margin:0 1%;
+  font-size: 18px;
+  font-weight: bold;
+  vertical-align: top;
+  line-height: 1.3;
+  margin-bottom: 55px;
+}
+
+/* ==================每一件圖示==================== */
+
+.My_favorite> .favorite_01>a>img{
+  width:100%;
+  border-radius: 100px 0 100px 0;
+}
+
+.My_favorite> .favorite_01>.into_shopping_cart{
+  width:50%;
+  height:30px;
+  margin-top: 7px;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: bold;
+  border:1px solid #DDDDDD;
+  background-color: #DDDDDD;
+  display:block;
+}
+
+.My_favorite> .favorite_01>.select_size{
+  width:50%;
+  height:30px;
+  margin-top: 7px;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: bold;
+  border:1px solid #DDDDDD;
+  background-color: #DDDDDD;
+  padding-left: 20px;
+}

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-tw" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>ENDLESS|HOME</title>
+    <link rel="stylesheet" href="./CSS/HeaderFooter.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script src="./js/jquery-3.5.1.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head> 
+  
+  
+<body>
+<!-- ======================================header 開始======================================= -->
+<!-- ======================================header 開始======================================= -->
+<header class="header">
+    <div class="all">
+<!-- =================header_left 放logo=============== -->
+          <div class="left">
+            <a href="./index.html" class="my_logo"><img src="./imgs/logo.png"></a>
+          </div>
+<!-- =================header_right 放選單=============== -->
+          <div class="right">
+<!-- ==============搜尋bar============== -->
+              <div class="right_01">
+                  <div class="search_box">
+                        <form class="search_form" action="./index.html" method="post">
+                            <input type="text" name="" value="" class="search_area" placeholder="請輸入關鍵字">
+                            <button type="button" name="button" class="search_go">GO</button>
+                        </form>
+                  </div>
+              </div>
+<!-- ===============選單============= -->
+              <div class="right_02">
+                    <ul class="menu_text_list">
+                        <a href="./My_women.html"><li class="women">女 裝</li></a>
+                        <a href="./My_men.html"><li class="man">男 裝</li></a>
+                        <a href="#"><li class="kids">童 裝</li></a>
+                        <a href="#"><li class="accessories">配 件</li></a>
+                        <a href="./MyShop.html"><li class="map">門市資訊</li></a>
+                        <a href="./ContactUs.html"><li class="contact">聯絡我們</li></a>
+                        <a href="AboutUs.html"><li class="about_endless">關於我們</li></a>
+                    </ul>
+
+                    <div class="menu_icon">
+                        <a href="#"><img src="./imgs/cart.png" alt=""></a>
+                        <a href="./MyFavorite.html"><img src="./imgs/heart.png" alt=""></a>
+                        <a class="number" href="#" ><img src="./imgs/number.png" alt=""></a>
+                        
+                    </div>
+              </div>
+<!-- ==============漢堡按鈕============== -->
+              <div class="right_03">
+                      <img src="./imgs/burger.png" alt="" class="burger_btn">
+              </div>
+<!-- ==============漢堡選單============== -->
+              <div class="right_04">
+                  <ul>
+                      <a href="./My_women.html"><li>女 裝</li></a>
+                      <a href="./My_men.html"><li>男 裝</li></a>
+                      <a href="#"><li>童 裝</li></a>
+                      <a href="#"><li>配 件</li></a>
+                      <a href="./MyShop.html"><li>門市資訊</li></a>
+                      <a href="./ContactUs.html"><li>聯絡我們</li></a>
+                      <a href="AboutUs.html"><li>關於我們</li></a>
+                  </ul>
+              </div>
+<!-- ================================ -->
+        </div>
+    </div>
+  </header>
+<!-- ===========jQuery控制漢保選單出現===================== -->
+
+  <script>
+      $(document).ready(function(){
+           $('.right_03').click(function(){
+                $('.right_04').slideToggle();
+                // $('.right_04').fadeToggle();
+          })
+      });
+  </script>
+<!-- ======================================header 結束======================================= -->
+<!-- ======================================header 結束======================================= -->
+
+
+
+<!-- =======================================banner區域======================================= -->
+
+    <div class="home_banner">
+        <div class="home_banner_box">      
+            <div class="banner_slider_this">
+                <div class="banner_slider_allitems">
+                    <img src="./imgs/banner_001(1).jpg" alt="bg_pictuer_01" class="banner_001">
+                    <img src="./imgs/banner_002(1).jpg" alt="bg_pictuer_01" class="banner_001">
+                    <img src="./imgs/banner_003(1).jpg" alt="bg_pictuer_01" class="banner_001">
+                    <img src="./imgs/banner_004(1).jpg" alt="bg_pictuer_01" class="banner_001">
+                    <img src="./imgs/banner_005(1).jpg" alt="bg_pictuer_01" class="banner_001">
+                    <img src="./imgs/banner_006(1).jpg" alt="bg_pictuer_01" class="banner_001">
+                    <img src="./imgs/banner_001(1).jpg" alt="bg_pictuer_01" class="banner_001">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ==============================banner 下方 選單區========================================== -->
+
+    <div class="home_button_01">
+            <div class="home_button_02">
+
+                    <div class="home_button_03" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="100"  >
+                        <a href="./My_women.html">
+                            <img src="./imgs/home_button_women.jpg" alt="" class="select_01" >
+                            <button type="button" name="" class="btn_women">選購女裝</button>
+                        </a>
+                    </div>
+
+                    <div class="home_button_03" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000">
+                        <a href="./My_men.html">
+                            <img src="./imgs/home_button_men.jpg" alt="" class="select_02" >
+                            <button type="button" name="" class="btn_women">選購男裝</button>
+                        </a>
+                    </div>
+
+                    <div class="home_button_03" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="2000" >
+                        <a href="#">
+                            <img src="./imgs/home_button_kids.jpg" alt="" class="select_03" >
+                            <button type="button" name="" class="btn_women">選購童裝</button>
+                        </a>
+                    </div>
+
+                    <div class="home_button_03" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="3000">
+                        <a href="#">
+                            <img src="./imgs/home_button_accessories.jpg" alt="" class="select_04" >
+                            <button type="button" name="" class="btn_women">選購配件</button>
+                        </a>
+                    </div>
+                    
+            </div>
+    </div>
+
+    <script>
+        AOS.init();
+    </script>
+
+<!-- ========================================新品上市區======================================== -->
+<div class="new_area_bg_all">
+<!-- ======================================女裝新品上市區====================================== -->
+    <h2>女裝新品</h2>
+    <div class="new_area_bg">
+        <div class="new_area_b01">
+<!-- ==============女裝 BOX-1============== -->
+                    <div class="new_area_02_3" id="not_showed_2">
+                        <a href="#">
+                            <img src="./imgs/home_women_new_01.jpg">
+                            <div class="box_a">
+                                <span class="new_in_women_11">新品上市</span>
+                                <span class="style_name_women_11">拉克蘭袖型針織罩衫</span>
+                                <span class="price_women_11">NT$790</span>
+                            </div>
+                        </a>
+                    </div>
+<!-- ==============女裝 BOX-2============== -->
+                    <div class="new_area_02_1">
+                        <img src="./imgs/bg_gray.jpg" alt="">
+                        <div class="box_b">
+                            <span class="text_women">WOMEN</span>  
+                            <a href="./My_women.html" class="women_newin">
+                                <button type="button" name="button" class="btn">選購女裝新品</button>
+                            </a>        
+                        </div>
+                    </div>
+<!-- ==============女裝 BOX-3============== -->
+                    <div class="new_area_02_3" id="not_showed_1">
+                        <a href="#">
+                            <img src="./imgs/home_women_new_02.jpg">
+                            <div class="box_a">
+                                <span class="new_in_women_22">新品上市</span>
+                                <span class="style_name_women_22">基本款高領毛衣</span>
+                                <span class="price_women_22">NT$690</span>
+                            </div>
+                        </a>
+                    </div>           
+<!-- ==============女裝 BOX-4============== -->
+                    <div class="new_area_02_2" id="not_showed">
+                        <img src="./imgs/bg_gray.jpg" alt="">
+                        <div class="box_b">
+                            <span class="text_newin">NEW IN</span>
+                        </div>
+                    </div>
+<!-- ================================= -->
+        </div>
+    </div>  
+<!-- ======================================男裝新品上市區====================================== -->
+<h2>男裝新品</h2>
+<div class="new_area_bg">
+    <div class="new_area_b01">
+<!-- ==============BOX-1============== -->
+                <div class="new_area_02_2" id="not_showed">
+                    <img src="./imgs/bg_gray.jpg" alt="">
+                    <div class="box_b">
+                        <span class="text_newin">NEW IN</span>
+                    </div>
+                </div>
+<!-- ==============BOX-2============== -->
+                <div class="new_area_02_3" id="not_showed_1">
+                    <a href="#">
+                        <img src="./imgs/home_men_new_02.jpg">
+                        <div class="box_a">
+                            <span class="new_in_men_11">新品上市</span>
+                            <span class="style_name_men_11">舖棉外套</span>
+                            <span class="price_men_11">NT$1890</span>
+                        </div>
+                    </a>
+                </div>
+<!-- ==============BOX-3============== -->
+                <div class="new_area_02_1">
+                    <img src="./imgs/bg_gray.jpg" alt="">
+                    <div class="box_b">
+                        <span class="text_women">MEN</span>  
+                        <a href="./My_women.html" class="women_newin">
+                            <button type="button" name="button" class="btn">選購男裝新品</button>
+                        </a>        
+                    </div>
+                </div>
+<!-- ==============BOX-4============== -->
+                <div class="new_area_02_3" id="not_showed_2">
+                    <a href="#">
+                        <img src="./imgs/home_men_new_01.jpg">
+                        <div class="box_a">
+                            <span class="new_in_men_22">新品上市</span>
+                            <span class="style_name_men_22">牛仔外套</span>
+                            <span class="price_men_22">NT$1090</span>
+                        </div>
+                    </a>
+                </div>                       
+<!-- ================================= -->
+    </div>
+</div>  
+<!-- ======================================童裝新品上市區====================================== -->
+<h2>童裝新品</h2>
+<div class="new_area_bg">
+    <div class="new_area_b01">
+<!-- ==============BOX-1============== -->
+                <div class="new_area_02_3" id="not_showed_2">
+                    <a href="#">
+                        <img src="./imgs/home_kids_new_01.jpg">
+                        <div class="box_a">
+                            <span class="new_in_kid_11">新品上市</span>
+                            <span class="style_name_kid_11">毛絨背心</span>
+                            <span class="price_kid_11">NT$590</span>
+                        </div>
+                    </a>
+                </div>
+<!-- ==============BOX-2============== -->
+                <div class="new_area_02_1">
+                    <img src="./imgs/bg_gray.jpg" alt="">
+                    <div class="box_b">
+                        <span class="text_women">KIDS</span>  
+                        <a href="./My_women.html" class="women_newin">
+                            <button type="button" name="button" class="btn">選購童裝新品</button>
+                        </a>        
+                    </div>
+                </div>
+<!-- ==============BOX-3============== -->
+                <div class="new_area_02_3" id="not_showed_1">
+                    <a href="#">
+                        <img src="/imgs/home_kids_new_02.jpg">
+                        <div class="box_a">
+                            <span class="new_in_kid_22">新品上市</span>
+                            <span class="style_name_kid_22">連帽上衣</span>
+                            <span class="price_kid_22">NT$890</span>
+                        </div>
+                    </a>
+                </div>           
+<!-- ==============BOX-4============== -->
+                <div class="new_area_02_2" id="not_showed">
+                    <img src="./imgs/bg_gray.jpg" alt="">
+                    <div class="box_b">
+                        <span class="text_newin">NEW IN</span>
+                    </div>
+                </div>
+<!-- ================================= -->
+    </div>
+</div>  
+<!-- 大div包住 新品三大區 -->
+</div> 
+<!-- 大div包住 新品三大區 -->
+<!-- ======================================配件新品上市區====================================== -->
+
+<h2>配件新品</h2>
+<div class="newaccessories_area_bg_all">
+        <div class="newaccessories_area_bg">
+                <div class="newaccessories_area">
+
+                        <div class="accessory">
+                            <a href="">
+                                <img src="./imgs/home_accessories_new_02.jpg" alt="">
+                                <div class="accessory_text">
+                                    <span>格子帽</span>
+                                    <span>NT$590</span>
+                                </div>
+                            </a>
+                         </div>
+
+
+                        <div class="accessory">
+                            <a href="">
+                                <img src="./imgs/home_accessories_new_03.jpg" alt="">
+                                <div class="accessory_text">
+                                    <span>耳飾</span>
+                                    <span>NT$290</span>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div class="accessory">
+                            <a href="">
+                                <img src="./imgs/home_accessories_new_01.jpg" alt="">
+                                <div class="accessory_text">
+                                    <span>髮飾</span>
+                                    <span>NT$190</span>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div class="accessory">
+                            <a href="">
+                                <img src="./imgs/home_accessories_new_05.jpg" alt="">
+                                <div class="accessory_text">
+                                    <span>渲染口罩</span>
+                                    <span>NT$99</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        
+                        <div class="accessory">
+                            <a href="">
+                            <img src="./imgs/bg_gray_accessory.jpg" alt="">
+                            <div class="accessory_box">
+                                    <span class="text_accessory">ACCESSORIES</span>  
+                                    <button type="button" class="accessory_btn">選購配件新品</button>
+                            </div> 
+                            <a>
+                        </div>
+
+
+                        <div class="accessory">
+                            <a href="">
+                                <img src="./imgs/home_accessories_new_04.jpg" alt="">
+                                <div class="accessory_text">
+                                    <span>手機保護殼</span>
+                                    <span>NT$490</span>
+                                </div>
+                            </a>
+                        </div>
+
+                </div>
+        </div>
+</div>
+
+
+
+      <!-- ===============配件新品上市區=================== -->
+
+
+
+<!-- ============門市資訊====================== -->
+      <!-- <div class="home_map_title">門市資訊</div>
+
+      <div class="home_map_01">
+
+              <div class="home_map_tp">
+                  <div class="home_map_tp_01">
+                      <img src="./imgs/home_map_tp.jpg" alt="" class="home_map_tp_jpg">
+                  </div>
+                  <div class="home_map_tp_02">
+                      <div class="name_of_shop">台北101店</div>
+
+                      <ul class="weekday">
+                        <li>星期一  上午 11:00 - 下午 10:00</li>
+                        <li>星期二  上午 11:00 - 下午 10:00</li>
+                        <li>星期三  上午 11:00 - 下午 10:00</li>
+                        <li>星期四  上午 11:00 - 下午 10:00</li>
+                        <li>星期五  上午 11:00 - 下午 10:00</li>
+                        <li>星期六  上午 10:30 - 下午 10:30</li>
+                        <li>星期日  上午 10:30 - 下午 10:30</li>
+                      </ul>
+                      <div class="tel">客服電話　+886-2-2733 1111</div>
+                      <div class="add">門市地址　台北市信義區信義路５段７號</div>
+                  </div>
+              </div>
+
+
+              <div class="home_map_tc">
+                  <div class="home_map_tc_01">
+                      <img src="./imgs/home_map_tc.jpg" alt="" class="home_map_tc_jpg">
+                  </div>
+                  <div class="home_map_tc_02">
+                      <div class="name_of_shop">台中大遠百店</div>
+
+                      <ul class="weekday">
+                        <li>星期一  上午 11:00 - 下午 10:00</li>
+                        <li>星期二  上午 11:00 - 下午 10:00</li>
+                        <li>星期三  上午 11:00 - 下午 10:00</li>
+                        <li>星期四  上午 11:00 - 下午 10:00</li>
+                        <li>星期五  上午 11:00 - 下午 10:00</li>
+                        <li>星期六  上午 10:30 - 下午 10:30</li>
+                        <li>星期日  上午 10:30 - 下午 10:30</li>
+                      </ul>
+                      <div class="tel">客服電話　+886-4-2733 1111</div>
+                      <div class="add">門市地址　台中市信義區信義路５段７號</div>
+                  </div>
+              </div>
+
+
+              <div class="home_map_ks">
+                  <div class="home_map_ks_01">
+                      <img src="./imgs/home_map_ks.jpg" alt="" class="home_map_ks_jpg">
+                  </div>
+                  <div class="home_map_ks_02">
+                      <div class="name_of_shop">高雄夢時代店</div>
+
+                      <ul class="weekday">
+                        <li>星期一  上午 11:00 - 下午 10:00</li>
+                        <li>星期二  上午 11:00 - 下午 10:00</li>
+                        <li>星期三  上午 11:00 - 下午 10:00</li>
+                        <li>星期四  上午 11:00 - 下午 10:00</li>
+                        <li>星期五  上午 11:00 - 下午 10:00</li>
+                        <li>星期六  上午 10:30 - 下午 10:30</li>
+                        <li>星期日  上午 10:30 - 下午 10:30</li>
+                      </ul>
+                      <div class="tel">客服電話　+886-7-2733 1111</div>
+                      <div class="add">門市地址　高雄市信義區信義路５段７號</div>
+                  </div>
+              </div>
+
+      </div> -->
+
+
+
+<!-- ==========================footer======================================= -->
+<footer>
+    <p>copyright &copy All Rights Reserved</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,205 @@
+
+body{
+  margin:0 auto;
+  box-sizing: border-box;
+}
+
+.mark_my_shop{
+  width:1200px;
+  margin:0 auto;
+  font-size: 36px;
+  color:black;
+  font-weight: bold;
+  padding-left: 37px;
+  padding-top: 100px;
+  /* padding-bottom: 20px; */
+}
+
+.my_shop{
+  width:1200px;
+  /* border:1px solid red; */
+  margin:0 auto;
+  position:relative;
+}
+
+.my_shop>img{
+  width:100%;
+}
+
+.my_shop>.shop_all{
+  width:53%;
+  height:800px;
+  /* border:1px solid blue; */
+  /* background-color: lightyellow; */
+  position:absolute;
+  top:50px;
+  left:50px;
+}
+
+.my_shop>.shop_all>.shop_01, .shop_02, .shop_03{
+  width:100%;
+  height:30%;
+  /* border:1px solid green; */
+  background-color: #404040;
+}
+
+/* ===================門市001===================== */
+
+.my_shop>.shop_all>.shop_01>.shop_01_jpg{
+  height:100%;
+}
+
+.my_shop>.shop_all>.shop_01{
+  position: relative;
+}
+
+.my_shop>.shop_all>.shop_01>.name_of_shop{
+  padding-top: 5px;
+  font-size: 21px;
+  font-weight: bold;
+  color:white;
+  position: absolute;
+  top:1%;
+  left:47%;
+}
+
+.my_shop>.shop_all>.shop_01>.weekday{
+  margin:0;
+  padding:0;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #DDDDDD;
+  list-style: none;
+  position: absolute;
+  top:0;
+  left:47%;
+  top: 20%;
+}
+
+.my_shop>.shop_all>.shop_01>.tel{
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  top:78%;
+  left:47%;
+}
+
+.my_shop>.shop_all>.shop_01>.add{
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  top:88%;
+  left:47%;
+}
+
+/* ===================門市002===================== */
+.my_shop>.shop_all>.shop_02>.shop_01_jpg{
+  height:100%;
+}
+
+.my_shop>.shop_all>.shop_02{
+  position: relative;
+}
+
+.my_shop>.shop_all>.shop_02>.name_of_shop{
+  padding-top: 5px;
+  font-size: 21px;
+  font-weight: bold;
+  color:white;
+  position: absolute;
+  top:1%;
+  left:47%;
+}
+
+.my_shop>.shop_all>.shop_02>.weekday{
+  margin:0;
+  padding:0;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #DDDDDD;
+  list-style: none;
+  position: absolute;
+  top:0;
+  left:47%;
+  top: 20%;
+}
+
+.my_shop>.shop_all>.shop_02>.tel{
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  top:78%;
+  left:47%;
+}
+
+.my_shop>.shop_all>.shop_02>.add{
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  top:88%;
+  left:47%;
+}
+
+/* ===================門市003===================== */
+.my_shop>.shop_all>.shop_03>.shop_01_jpg{
+  height:100%;
+}
+
+.my_shop>.shop_all>.shop_03{
+  position: relative;
+}
+
+.my_shop>.shop_all>.shop_03>.name_of_shop{
+  padding-top: 5px;
+  font-size: 21px;
+  font-weight: bold;
+  color:white;
+  position: absolute;
+  top:1%;
+  left:47%;
+}
+
+.my_shop>.shop_all>.shop_03>.weekday{
+  margin:0;
+  padding:0;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #DDDDDD;
+  list-style: none;
+  position: absolute;
+  top:0;
+  left:47%;
+  top: 20%;
+}
+
+.my_shop>.shop_all>.shop_03>.tel{
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  top:78%;
+  left:47%;
+}
+
+.my_shop>.shop_all>.shop_03>.add{
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  top:88%;
+  left:47%;
+}
+
+/* ===================門市002===================== */
+.my_shop>.shop_all>.shop_02{
+  margin: 6% 0 6% 0;
+}
+
+
+/* ===================門市003===================== */
+.my_shop>.shop_all>.shop_03{
+}
+
+/* ===================門市背景框===================== */
+/* .my_shop>.shop_all>.shop_01, .shop_02, .shop_03{
+  border-radius: 0  50px  0  50px;
+  overflow: hidden;
+} */

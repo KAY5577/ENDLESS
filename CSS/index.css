@@ -1,0 +1,1166 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+}
+/* ===============================banner區===============================  */
+.home_banner{
+  /* margin:42px auto 0px auto; */
+  margin: 0 auto;
+  width: 100%;
+  /* height: 380px; */
+  background-image: url("../imgs/banner_bg(1).jpg");
+  overflow: hidden;
+  z-index: 1;
+  padding-top: 100px;
+}
+
+.home_banner>.home_banner_box{
+  width:1200px;
+  height:100%;
+  margin:0 auto;
+  /* border:3px solid purple; */
+}
+
+.home_banner>.home_banner_box>.banner_slider_this{
+  /* width:740px; */
+  width: 61.67%;
+  overflow: hidden;
+  margin:0 auto;
+  z-index: 0;
+  /* border:3px solid purple; */
+}
+
+.home_banner>.home_banner_box>.banner_slider_this>.banner_slider_allitems{
+  /* width:5180px;   */
+  width: 700%;
+  /* 這裡的長度要再加第一張(重疊) */
+  position:relative;
+  animation: slider 15s infinite;
+}
+
+.home_banner>.home_banner_box>.banner_slider_this>.banner_slider_allitems>img{
+  /* width:740px; */
+  width:14.285%;
+  /* height:380px; */
+  overflow: hidden;
+  float:left;
+}
+
+@keyframes slider{
+  /* 這裡是指每一張出現的時間與位置 */
+     /* 0%{left:     0px;}
+  16.7%{left:  -740px;}
+  33.4%{left: -1480px;}
+    50%{left: -2220px;}
+  66.7%{left: -2960px;}
+  83.3%{left: -3700px;}
+   100%{left: -4440px;} */
+     0%{left:    0%;}
+  16.7%{left: -100%;}
+  33.4%{left: -200%;}
+    50%{left: -300%;}
+  66.7%{left: -400%;}
+  83.3%{left: -500%;}
+   100%{left: -600%;}
+}
+
+/* ========================== RWD : BANNER區==========================  */
+@media screen and (max-width: 575px){
+  .home_banner>.home_banner_box{
+    width:100%;
+    /* border:5px solid blue; */
+  }
+  .home_banner>.home_banner_box>.banner_slider_this{
+    width: 100%;
+  }
+} 
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .home_banner>.home_banner_box{
+    width: 560px;
+    /* border:5px solid green; */
+  }
+  .home_banner>.home_banner_box>.banner_slider_this{
+    width: 90%;
+  } 
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .home_banner>.home_banner_box{
+    width: 750px;
+    /* border:5px solid yellow; */
+  }
+  .home_banner>.home_banner_box>.banner_slider_this{
+    width: 70%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  .home_banner>.home_banner_box{
+    width: 975px;
+    /* border:5px solid orange; */
+  }
+  .home_banner>.home_banner_box>.banner_slider_this{
+    width: 65%;
+  }
+}
+/* ================================================================  */
+/* =======================banner 下方 選單區=======================  */
+
+.home_button_01{
+  width:100%;
+  margin: 15px auto 0 auto;
+  background-image: url("../imgs/home_button_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  /* border:1px solid blue; */
+}
+
+.home_button_01>.home_button_02{
+  width:1200px;
+  /* height:296px; */
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between; 
+  /* justify-content: space-between; 橫向對齊 */
+  align-items:center;
+  /* align-items:center;直向對齊 */
+  flex-directoin:row;
+  flex-wrap:wrap;
+  /* border:3px solid purple; */
+}
+
+.home_button_01>.home_button_02>.home_button_03{
+  /* width:250px; */
+  width: 22%;
+  margin-top: 2.3%;
+  margin-bottom: 2.3%;
+  /* height:228px; */
+  /* height: 77%; */
+  overflow: hidden;
+  position:relative;
+  /* border:3px solid purple; */
+}
+
+.home_button_01>.home_button_02>.home_button_03>a>img{
+  width:100%;
+}
+
+.home_button_01>.home_button_02>.home_button_03>a>button{
+  font-size: 18px;
+  line-height:15.4%;
+  font-weight: 700;
+  color: white;
+  /* width:110px; */
+  width: 45%;
+  /* height:35px; */
+  height: 15.4%;
+  border:2px solid white;
+  border-radius: 2px;
+  background-color: #444444;
+  position:absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+}
+.home_button_01>.home_button_02>.home_button_03>a>button:hover{
+  border:2px solid white;
+  background-color: white;
+  color: #444444;
+}
+
+/* ==================== RWD : banner 下方 選單區====================  */
+@media screen and (max-width: 575px){
+      .home_button_01{
+        background-image: none;
+        background-color: #444444;
+        margin-top: 0;
+      }
+      .home_button_01>.home_button_02{
+        width: 100%;  
+        /* border: 5px solid blue ; */
+        justify-content: space-around;
+      }   
+      .home_button_01>.home_button_02>.home_button_03{
+        width: 47%;
+      }
+      .home_button_01>.home_button_02>.home_button_03>a>button{
+        font-size: 18px;
+      } 
+} 
+@media screen and (min-width: 576px) and (max-width: 767px){
+      .home_button_01>.home_button_02{
+        width: 560px;
+        /* border: 5px solid green; */
+      }  
+      .home_button_01>.home_button_02>.home_button_03{
+        width: 23%;
+      } 
+      .home_button_01>.home_button_02>.home_button_03>a>button{
+        font-size: 13px;
+      } 
+      .home_button_01>.home_button_02>.home_button_03>a>button{
+        width: 60%;
+      }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+      .home_button_01>.home_button_02{
+        width: 750px;
+        /* border: 5px solid yellow; */
+      } 
+      .home_button_01>.home_button_02>.home_button_03>a>button{
+        font-size: 16px;
+      } 
+      .home_button_01>.home_button_02>.home_button_03>a>button{
+        width: 53%;
+      } 
+}    
+@media screen and (min-width: 992px) and (max-width: 1199px){
+      .home_button_01>.home_button_02{
+          width: 975px;
+          /* border: 5px solid orange; */
+      }   
+}
+
+
+/* ===========================新品上市區===========================  */
+/* ==================== 大背框:寬100%包含四大區 ===================  */
+.new_area_bg_all{
+  width:100%;
+}
+
+/* ==============h2單區標題==============  */
+/* .new_area_bg_all>h2{ */
+h2{
+  width: 1200px;
+  margin:0 auto;
+  font-size: 36px;
+  color: #AE0000;
+  padding-top:50px;
+  padding-left:7px;
+  padding-bottom: 1px;
+}
+
+/* =========================RWD : H2標題============================  */
+@media screen and (max-width: 575px){
+  /* border:5px solid blue; */
+  /* .new_area_bg_all>h2{ */
+  h2{
+    width: 100%;
+    font-size: 26px;
+  }
+} 
+@media screen and (min-width: 576px) and (max-width: 767px){
+/* border:5px solid green; */
+  /* .new_area_bg_all>h2{ */
+  h2{
+    width: 560px;
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+/* border:5px solid yellow; */
+/* ====RWD:標題====  */ 
+  /* .new_area_bg_all>h2{ */
+  h2{
+    width: 750px;
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+/* border:5px solid orange; */
+  /* .new_area_bg_all>h2{ */
+  h2{
+    width: 975px;
+    font-size: 34px;
+  }
+}
+
+/* ========單區大背框 100% 填灰色========  */
+.new_area_bg_all>.new_area_bg{
+  width:100%;
+  background-color: #777777;
+}
+
+
+/* ===========單區主背框 1200px==========  */
+.new_area_bg_all>.new_area_bg>.new_area_b01{
+  width:1200px;
+  margin:0 auto;
+  /* border:4px solid purple; */
+  display:flex;
+}
+
+/* ======================== RWD : 單區主背框========================  */
+@media screen and (max-width: 575px){
+  .new_area_bg_all>.new_area_bg>.new_area_b01{
+    width:100%;
+    /* border:5px solid blue; */
+  }
+} 
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .new_area_bg_all>.new_area_bg>.new_area_b01{
+    width: 560px;
+    /* border:5px solid green; */
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .new_area_bg_all>.new_area_bg>.new_area_b01{
+    width: 750px;
+    /* border:5px solid yellow; */
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  .new_area_bg_all>.new_area_bg>.new_area_b01{
+    width: 975px;
+    /* border:5px solid orange; */
+  }
+}
+
+
+/* =========單區 四小格設定 寬25%========  */
+.new_area_bg_all>.new_area_bg>.new_area_b01>div{
+  width:25%;
+  position:relative;
+  overflow: hidden;
+}
+
+/* ==== #1(btn) & #2(new)背景圖設定======  */
+.new_area_bg_all>.new_area_bg>.new_area_b01>div>img{
+  max-width:100%;
+  overflow: hidden;
+}
+
+/* ======= 四小區上面的灰白框設定========  */
+
+.box_a,.box_b{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 6% 7% 6% 7%;
+  width: 86%;
+  height: 88%;
+  border: 3.5px solid #555555;
+}
+/* .box_b{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 6% 7% 6% 7%;
+  width: 86%;
+  height: 88%;
+  border: 3.5px solid #555555;
+} */
+
+/* ===========:#1(btn : 選購新品)==========  */
+/* ===========:#1(btn : 選購新品)==========  */
+
+.new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_1{
+  max-width: 100%;
+  overflow: hidden;
+}
+.new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_1>.box_b>span{
+  font-size: 50px;
+  color:  #555555;
+  position:absolute;
+  top:45%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_1>.box_b>a>.btn{
+  width:62%;
+  height: 13%;
+  font-size: 20px;
+  font-weight: 550;
+  color:white;
+  border:3px solid white;
+  border-radius: 2px;
+  background-color: transparent;
+  position:absolute;
+  top:60%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_1>.box_b>a>.btn:hover{
+  color: #444444;
+  background-color: white;
+}
+
+/* ===================== RWD : #1(btn : 選購新品)=====================  */
+@media screen and (max-width: 575px){
+  /* border:5px solid blue; */
+  .new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_1>.box_b>span{
+    font-size: 38px;
+  }
+  .new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_1>.box_b>a>.btn{
+    width:65%;
+    height: 13%;
+    font-size: 18px;
+    border:2px solid white;
+    position:absolute;
+    top:62%;
+  }
+} 
+@media screen and (min-width: 576px) and (max-width: 767px){
+  /* border:5px solid green; */
+  .new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_1>.box_b>span{
+    font-size: 45px;
+  }
+  .new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_1>.box_b>a>.btn{
+    width:65%;
+    height: 13%;
+    font-size: 18px;
+    border:2px solid white;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  /* border:5px solid yellow; */
+  .new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_1>.box_b>span{
+    font-size: 38px;
+  }
+  .new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_1>.box_b>a>.btn{
+    width:75%;
+    height: 15%;
+    font-size: 15px;
+    border:2px solid white;
+    position:absolute;
+    top:62%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  /* border:5px solid orange; */
+  .new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_1>.box_b>span{
+    font-size: 45px;
+  }
+  .new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_1>.box_b>a>.btn{
+    width:65%;
+    height: 14%;
+    font-size: 18px;
+  }
+}
+
+
+/* ===============#2(NEW IN)================  */
+/* ===============#2(NEW IN)================  */
+
+.new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_2{
+  background-image: url("../imgs/bg_gray.jpg");
+  max-width: 100%;
+  overflow: hidden;
+}
+.new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_2>.box_b>span{
+  /* border:1px solid red; */
+  font-size: 55px;
+  color:  #555555;
+  font-weight: bold;
+  position: absolute;
+  top:40%;
+  left:12%;
+  transform: rotate(30deg)
+}
+
+/* ========================== RWD : #2(NEW IN)==========================  */
+@media screen and (min-width: 768px) and (max-width: 991px){
+  /* border:5px solid yellow; */
+  .new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_2>.box_b>span{
+    font-size: 33px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  /* border:5px solid orange; */
+  .new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_2>.box_b>span{
+    font-size: 45px;
+  }
+}
+
+
+/* ===============#3(圖片區)================  */
+/* ===============#3(圖片區)================  */
+
+/* ========基本文字設定========  */
+.new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(1){
+  font-size: 23px;
+  font-weight: bold;
+  color:#333333;
+  position: absolute;
+  top:40%;
+  left:10%;
+}
+
+.new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(2){
+  font-size: 16px;
+  font-weight: bold;
+  color:#333333;
+  position: absolute;
+  top:50%;
+  left:10%;
+}
+
+.new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(3){
+  font-size: 22px;
+  font-weight: bold;
+  color:#333333;
+  position: absolute;
+  top:58%;
+  left:10%;
+}
+
+/* ========文字個別調整========  */
+/* ====女裝(第二圖)文字設定====  */
+
+.new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.new_in_women_22{
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  top:33%;
+  left:20%;
+}
+.new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.style_name_women_22{
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  top:43%;
+  left:20%;
+}
+.new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.price_women_22{
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  top:51%;
+  left:20%;
+} 
+
+/* ========文字個別調整========  */
+/* ====男裝(第一圖)文字設定====  */
+.new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.new_in_men_11{
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  top:40%;
+  left:13%;
+}
+.new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.style_name_men_11{
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  top:50%;
+  left:13%;
+}
+.new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.price_men_11{
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  top:58%;
+  left:13%;
+} 
+
+/* ========文字個別調整========  */
+/* ====男裝(第二圖)文字設定====  */
+.new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.new_in_men_22{
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  top:42%;
+  left:29%;
+}
+.new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.style_name_men_22{
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  top:52%;
+  left:29%;
+}
+.new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.price_men_22{
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  top:60%;
+  left:29%;
+}
+
+/* ========文字個別調整========  */
+/* ====童裝(第一圖)文字設定====  */
+.new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.new_in_kid_11{
+  position: absolute;
+  top:60%;
+  left:42%;
+}
+.new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.style_name_kid_11{
+  position: absolute;
+  top:70%;
+  left:42%;
+}
+.new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.price_kid_11{
+  position: absolute;
+  top:78%;;
+  left:42%;
+} 
+
+/* ========文字個別調整========  */
+/* ====童裝(第二圖)文字設定====  */
+.new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.new_in_kid_22{
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  top:55%;
+  left:30%;
+}
+.new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.style_name_kid_22{
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  top:84%;
+  left:30%;
+}
+.new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.price_kid_22{
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  top:92%;
+  left:30%;
+} 
+
+/* =============================== RWD : 基本文字 ===============================  */ 
+@media screen and (max-width: 575px){
+  /* border:5px solid blue; */
+      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(1){
+        font-size: 19px;
+      }
+      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(2){
+        font-size: 14px;
+      }
+      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(3){
+        font-size: 17px;
+      }
+} 
+@media screen and (min-width: 576px) and (max-width: 767px){
+  /* border:5px solid green; */
+      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(1){
+        font-size: 20px;
+      }
+      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(2){
+        font-size: 15px;
+      }
+      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(3){
+        font-size: 21px;
+      }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  /* border:5px solid yellow; */
+      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(1){
+        font-size: 17px;
+      }
+      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(2){
+        font-size: 13px;
+      }
+      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(3){
+        font-size: 16px;
+      }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+      /* border:5px solid orange; */
+      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(1){
+        font-size: 20px;
+      }
+      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(2){
+        font-size: 15px;
+      }
+      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(3){
+        font-size: 21px;
+      }
+}
+/* =====================================================================  */ 
+
+/* ==========#3 #4 IMG 設定==========  */
+.new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_3>a>img{
+  width:100%;
+  transform: scale(1);
+  transition: .5s;
+}
+.new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_3>a>img:hover{
+  transform: scale(1.2);
+}
+/* ====================RWD : #3 #4 (圖片區)============================  */ 
+@media screen and (max-width: 575px){
+  /* border:5px solid blue; */
+  #not_showed,#not_showed_2{
+    display:none;
+  }
+  .new_area_bg_all>.new_area_bg>.new_area_b01>div{
+    width:50%;
+  }
+} 
+@media screen and (min-width: 576px) and (max-width: 767px){
+  /* border:5px solid green; */
+  #not_showed,#not_showed_1{
+    display:none;
+  }
+  .new_area_bg_all>.new_area_bg>.new_area_b01>div{
+    width:50%;
+  }
+}
+/* ================================================================  */ 
+/* ======================NEW IN - ACCESSORIES======================= */
+
+/* =======大背框100%=======  */
+.newaccessories_area_bg_all{
+  width:100%;
+  background-color: #777777;
+}
+
+/* =======背框1200px=======  */
+.newaccessories_area_bg_all>.newaccessories_area_bg{
+  width: 1200px;
+  /* border: 3px solid purple; */
+  margin: 0 auto;
+  padding-top:7%;
+  padding-bottom: 5%;
+}
+
+/* ====主背框1200px的75%===  */
+.newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area{
+  width:88%;
+  margin:0 auto;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap:wrap;
+  align-items:space-between;
+}
+
+/* =======六小區塊設定=====  */
+.newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory{
+  width: 28%;
+  margin: 1% auto;
+  overflow: hidden;
+  position:relative;
+}
+
+/* ====六小區塊圖文設定====  */
+.newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory>a>img{
+  max-width:100%;
+  transform: scale(1);
+  transition: .5s;
+}
+
+.newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory>a>img:hover{
+  transform: scale(1.2);
+}
+
+.newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory>a>.accessory_text{
+  width: 85%;
+  height: 33%;
+  position:absolute;
+  bottom:5%;
+  left:50%;
+  transform: translate(-50%);
+  background-color: #444444;
+  opacity: .55;
+}
+
+.newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory>a>.accessory_text>:nth-child(1){
+  color: white;
+  font-size: 18px;
+  position:absolute;
+  top:25%;
+  left:17%;
+}
+
+.newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory>a>.accessory_text>:nth-child(2){
+  color: white;
+  font-size: 20px;
+  position:absolute;
+  top:50%;
+  left:17%;
+}
+
+/* ====配件區按鈕設定====  */
+.accessory_box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 6% 7% 6% 7%;
+  width: 86%;
+  height: 88%;
+  border: 3.5px solid #555555;
+}
+
+.text_accessory{
+  font-size: 33px;
+  font-weight: bold;
+  color: #555555;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.accessory_btn{
+    width:70%;
+    height: 15%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #333333;
+    border:2px solid white;
+    border-radius: 2px;
+    position:absolute;
+    top:53%;
+    left:50%;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+
+.accessory_btn:hover{
+  color: #333333;
+  background-color: white;
+  border:2px solid #333333;
+}
+
+/* =============================== RWD : 配件新品===============================  */
+
+/* =============== RWD : 配件區按鈕 ================  */
+
+@media screen and (max-width: 575px){
+  .newaccessories_area_bg_all>.newaccessories_area_bg{
+    width: 100%;
+    /* border:5px solid blue; */
+  }
+  .text_accessory{
+    font-size:12px;
+  }
+  .accessory_btn{
+    width:98%;
+    height: 25%;
+    font-size: 10px;
+  }
+  .newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory>a>.accessory_text>:nth-child(1){
+    font-size: 14px;
+    position:absolute;
+    top:15%;
+  }
+  .newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory>a>.accessory_text>:nth-child(2){
+    font-size: 16px;
+    position:absolute;
+    top:50%;
+  }
+  .newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area{
+    width:100%;
+  }
+} 
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .newaccessories_area_bg_all>.newaccessories_area_bg{
+    width: 560px;
+    /* border:5px solid green; */
+  }
+  .text_accessory{
+    font-size: 15px;
+  }
+  .accessory_btn{
+    width:90%;
+    height: 23%;
+    font-size: 13px;
+  }
+  .newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory>a>.accessory_text>:nth-child(1){
+    font-size: 14px;
+    position:absolute;
+    top:15%;
+  }
+  .newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory>a>.accessory_text>:nth-child(2){
+    font-size: 16px;
+    position:absolute;
+    top:50%;
+  }
+  .newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area{
+    width:100%;
+  }
+  
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .newaccessories_area_bg_all>.newaccessories_area_bg{
+    width: 750px;
+    /* border:5px solid yellow; */
+  }
+  .text_accessory{
+    font-size:19px;
+  }
+  .accessory_btn{
+    width:80%;
+    height: 20%;
+    font-size: 15px;
+  }
+  .newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory>a>.accessory_text>:nth-child(1){
+    font-size: 16px;
+  }
+  .newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory>a>.accessory_text>:nth-child(2){
+    font-size: 18px;
+  }
+  
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  .newaccessories_area_bg_all>.newaccessories_area_bg{
+    width: 980px;
+    /* border:5px solid orange; */
+  }
+  .text_accessory{
+    font-size:26px;
+  }
+  .accessory_btn{
+    width:70%;
+    height: 15%;
+    font-size: 18px;
+  }
+  .newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory>a>.accessory_text>:nth-child(1){
+    font-size: 16px;
+  }
+  .newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory>a>.accessory_text>:nth-child(2){
+    font-size: 18px;
+  }
+  
+}
+/* =================================================================  */ 
+
+
+
+
+/* =================================================================  */ 
+
+@media screen and (max-width: 575px){
+  /* border:5px solid blue; */
+ 
+} 
+@media screen and (min-width: 576px) and (max-width: 767px){
+  /* border:5px solid green; */
+
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  /* border:5px solid yellow; */
+  
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  /* border:5px solid orange; */
+  
+}
+/* =================================================================  */ 
+
+
+
+/* =========================門市資訊========================= */
+
+.home_map_title{
+  margin:0 auto;
+  width:1200px;
+  box-sizing: border-box;
+  color:black;
+  font-weight: bold;
+  font-size: 36px;
+  /* border:1px solid blue; */
+  padding-left: 37px;
+  padding-top: 150px;
+  padding-bottom: 10px;
+}
+
+.home_map_01{
+  margin:0 auto;
+  box-sizing: border-box;
+  /* border:1px solid red; */
+  width:1200px;
+  height:530px;
+  margin-bottom: 70px;
+  position:relative;
+}
+
+.home_map_01>.home_map_tp, .home_map_tc, .home_map_ks{
+  margin:0 auto;
+  box-sizing: border-box;
+  width:30%;
+  border-radius: 10px;
+  /* border:1px solid black; */
+  background-color: #666666;
+  display:inline-block;
+}
+
+.home_map_01>.home_map_tp{
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+.home_map_01>.home_map_tc{
+  position:absolute;
+  top:0;
+  left:50%;
+  transform: translate(-50%);
+}
+
+.home_map_01>.home_map_ks{
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+/* ==========台北門市============= */
+.home_map_01>.home_map_tp>.home_map_tp_01>.home_map_tp_jpg{
+  width:92%;
+  margin:4%;
+  border-radius: 15px;
+}
+
+.home_map_01>.home_map_tp>.home_map_tp_02{
+  /* background-color: pink; */
+  width:92%;
+  height:200px;
+  margin:0 4% 4% 4%;
+  position: relative;
+  font-size: 16px;
+}
+
+.home_map_01>.home_map_tp>.home_map_tp_02>.name_of_shop{
+  font-size: 21px;
+  font-weight: bold;
+  position: absolute;
+  color:white;
+  top:0;
+  left:0;
+}
+
+.home_map_01>.home_map_tp>.home_map_tp_02>.weekday{
+  font-size: 14px;
+  font-weight: bold;
+  list-style: none;
+  line-height: 1.4;
+  margin:0;
+  color:#DDDDDD;
+  position: absolute;
+  top:0;
+  right:0;
+}
+
+.home_map_01>.home_map_tp>.home_map_tp_02>.tel{
+  font-size: 18px;
+  color:white;
+  font-weight: bold;
+  position: absolute;
+  bottom:27px;
+  left:0;
+}
+
+.home_map_01>.home_map_tp>.home_map_tp_02>.add{
+  font-size: 18px;
+  color:white;
+  font-weight: bold;
+  position: absolute;
+  bottom:0;
+  left:0;
+}
+
+/* ==========台中門市============= */
+.home_map_01>.home_map_tc>.home_map_tc_01>.home_map_tc_jpg{
+  width:92%;
+  margin:4%;
+  border-radius: 15px;
+}
+
+.home_map_01>.home_map_tc>.home_map_tc_02{
+  /* background-color: pink; */
+  width:92%;
+  height:200px;
+  margin:0 4% 4% 4%;
+  position: relative;
+  font-size: 16px;
+}
+
+.home_map_01>.home_map_tc>.home_map_tc_02>.name_of_shop{
+  font-size: 21px;
+  color:white;
+  font-weight: bold;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.home_map_01>.home_map_tc>.home_map_tc_02>.weekday{
+  font-size: 14px;
+  font-weight: bold;
+  list-style: none;
+  line-height: 1.4;
+  margin:0;
+  color:#DDDDDD;
+  position: absolute;
+  top:0;
+  right:0;
+}
+
+.home_map_01>.home_map_tc>.home_map_tc_02>.tel{
+  font-size: 18px;
+  color:white;
+  font-weight: bold;
+  position: absolute;
+  bottom:27px;
+  left:0;
+}
+
+.home_map_01>.home_map_tc>.home_map_tc_02>.add{
+  font-size: 18px;
+  color:white;
+  font-weight: bold;
+  position: absolute;
+  bottom:0;
+  left:0;
+}
+
+/* ==========高雄門市============= */
+.home_map_01>.home_map_ks>.home_map_ks_01>.home_map_ks_jpg{
+  width:92%;
+  margin:4%;
+  border-radius: 15px;
+}
+
+.home_map_01>.home_map_ks>.home_map_ks_02{
+  /* background-color: pink; */
+  width:92%;
+  height:200px;
+  margin:0 4% 4% 4%;
+  position: relative;
+  font-size: 16px;
+}
+
+.home_map_01>.home_map_ks>.home_map_ks_02>.name_of_shop{
+  font-size: 21px;
+  color:white;
+  font-weight: bold;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.home_map_01>.home_map_ks>.home_map_ks_02>.weekday{
+  font-size: 14px;
+  font-weight: bold;
+  list-style: none;
+  line-height: 1.4;
+  margin:0;
+  color:#DDDDDD;
+  position: absolute;
+  top:0;
+  right:0;
+}
+
+.home_map_01>.home_map_ks>.home_map_ks_02>.tel{
+  font-size: 18px;
+  color:white;
+  font-weight: bold;
+  position: absolute;
+  bottom:27px;
+  left:0;
+}
+
+.home_map_01>.home_map_ks>.home_map_ks_02>.add{
+  font-size: 18px;
+  color:white;
+  font-weight: bold;
+  position: absolute;
+  bottom:0;
+  left:0;
+}

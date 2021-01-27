@@ -1,0 +1,103 @@
+/* 現在位置: */
+.header>.all>.right>.right_02>.menu_text_list>a>.about_endless{
+  border-bottom: 2px solid white;
+}
+
+*{
+  box-sizing: border-box;
+  margin:0;
+}
+
+.about_us{
+  padding-top: 100px;
+  max-width: 100vw;
+  min-height: calc(100vh - 75px);
+  /* border:5px solid red; */
+  background-image: url("../imgs/about_us.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center  top 100px;
+}
+.about_us>.about_us_01{
+  width:1200px;
+  margin:0 auto;
+  /* border:5px solid purple; */
+}
+/* ==================標題:關於我們================== */
+.about_us>.about_us_01>h2{
+  font-size: 36px;
+  color:maroon;
+  display:block;
+  margin: 0;
+  margin: 100px 0px 30px 57px;
+}
+/* ==================標題:文字內容================== */
+.about_us>.about_us_01>span{
+  font-size: 20px;
+  font-weight: bold;
+  color: #555555;
+  display:block;
+  line-height: 1.4;
+  padding-left:0;
+  margin-left: 135px;
+  padding-bottom: 30px;
+} 
+
+/* ============================RWD============================ */
+
+/* 這個節點 沒有效果!! */
+/* 這個節點 沒有效果!! */
+/* 這個節點 沒有效果!! */
+@media screen and (max-width: 575px){
+  .about_us>.about_us_01{
+    width: 100%;
+    /* border:5px solid blue; */
+  } 
+  .about_us>.about_us_01>h2{
+    margin-left: 25px;
+  }
+  .about_us>.about_us_01>span{
+    margin-left:25px;
+    font-size: 18px;
+  }
+} 
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .about_us>.about_us_01{
+    width: 560px;
+    /* border:5px solid green; */
+  } 
+  .about_us>.about_us_01>h2{
+    margin-left: 42px;
+  }
+  .about_us>.about_us_01>span{
+    margin-left:45px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .about_us>.about_us_01{
+    width: 750px;
+    /* border:5px solid yellow; */
+  }
+  .about_us>.about_us_01>h2{
+    margin-left: 47px;
+  }
+  .about_us>.about_us_01>span{
+    margin-left:125px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  .about_us>.about_us_01{
+    width: 975px;
+    /* border:5px solid orange; */
+  }
+  .about_us>.about_us_01>h2{
+    margin-left: 52px;
+  }
+  .about_us>.about_us_01>span{
+    margin-left:130px;
+  }
+}
+

@@ -1,0 +1,154 @@
+body{
+  background-color: white;
+}
+
+
+.product{
+  margin:0 auto;
+  width:1200px;
+  /* background-color: lightblue; */
+}
+
+/* =============產品上左 款式圖================== */
+
+.product>.product_left{
+ width:50%;
+ /* background-color: lightyellow; */
+ display: inline-block;
+ vertical-align: top;
+ margin-top: 100px;
+}
+
+.product>.product_left>.product_left_01_jpg, .product_left_02_jpg, .product_left_03_jpg, .product_left_04_jpg{
+  width:48%;
+  margin-bottom: 25px;
+}
+
+.product>.product_left>.product_left_01_jpg, .product_left_03_jpg{
+  margin-right: 4%;
+}
+
+/* =============產品上右 款式介紹================== */
+
+.product>.product_right{
+ width:50%;
+ /* background-color: lightgreen; */
+ display: inline-block;
+ vertical-align: top;
+ margin-top: 100px;
+}
+
+.product>.product_right>.style_name, .style_price{
+  margin:0;
+  font-size: 30px;
+  color: black;
+  /* border:1px solid green; */
+  padding-left: 10px;
+}
+
+.product>.product_right>.style_name{
+    padding-bottom: 10px;
+}
+
+.product>.product_right>.style_price{
+  padding-bottom: 30px;
+}
+
+.product>.product_right> .style_explain_title, .style_explain_text, .style_explain_number{
+  margin:0;
+  font-size: 21px;
+  color: gray;
+  padding-left: 10px;
+}
+
+.product>.product_right> .style_explain_number{
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.product>.product_right> .style_color, .style_size, .style_qty{
+  font-size: 21px;
+  color:black;
+  padding-left: 10px;
+}
+
+.product>.product_right>.select_qty_pcs{
+  width: 12%;
+  height: 30px;
+  background-color: lightgray;
+  margin-left: 10px;
+  border:1px solid lightgray;
+  padding-left: 20px;
+}
+
+/* <div class="product">
+    <div class="product_right">
+         <div class="style_qty">數量-</div>
+         <select class="select_qty_pcs" name="select_qty_pcs">
+           <option value="1" selected>1</option>
+           <option value="2" selected>2</option>
+           <option value="3" selected>3</option>
+           <option value="4" selected>4</option>
+           <option value="5" selected>5</option>
+         </select>
+    </div>
+</div> */
+
+
+.product>.product_right>.style_color_list>img{
+  width:23%;
+  margin-left: 10px;
+  padding-bottom: 40px;
+}
+
+.product>.product_right>.style_size_items>.btn_size{
+  width: 10%;
+  height: 30px;
+  background-color: lightgray;
+  margin-left: 10px;
+  border:1px solid lightgray;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.product>.product_right>.size_explain>.size_guide{
+  width: 22%;
+  height: 30px;
+  background-color: lightgray;
+  margin-left: 10px;
+  border:1px solid lightgray;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.product>.product_right>.size_explain>.model_size{
+  font-size: 18px;
+  color:gray;
+  padding-left: 10px;
+}
+
+.product>.product_right>.style_qty{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.product>.product_right>.btn_style_qty{
+  width: 15%;
+  height: 30px;
+  background-color: lightgray;
+  margin-left: 10px;
+  border:1px solid lightgray;
+  vertical-align: top;
+  font-size: 18px;
+}
+
+.product>.product_right>.btn_shopping_cart, .btn_my_lovely{
+  width: 40%;
+  height: 40px;
+  background-color: lightgray;
+  margin-left: 10px;
+  display: block;
+  margin-top: 40px;
+  font-size: 18px;
+  border:1px solid lightgray;
+}

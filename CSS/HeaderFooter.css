@@ -1,0 +1,243 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+}
+body{
+  margin:0 auto;
+  background-color: #DDDDDD;
+  font-size: 0;
+  font-family: 'Arial', '微軟正黑體';
+}
+/* =========================header========================= */
+.header{
+  width: 100%;
+  background-color: black;
+  position: relative;
+  position:fixed;
+  z-index:100;
+  opacity: .85;
+}
+.header>.all{
+  width: 1200px;
+  height:100px;
+  margin:0 auto;
+}
+.header>.all>.left{
+  width:12%;
+  height:100px;
+  display:inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.header>.all>.right{
+  width:88%;
+  height:100px;
+  display:inline-block;
+  vertical-align: top;
+}
+/* ================header>all>left (logo位置)================ */
+.header>.all>.left>a>img{
+  width:130px;
+  position: absolute;
+  left:5px;
+  top:42px;
+  z-index:20;
+}
+/* ============= RWD : header>all>left (logo位置)============ */
+@media screen and (max-width: 575px){
+  /* border:3px solid blue; */
+  .header>.all>.left>a>img{
+    width:100px;
+    top:57px;
+  }
+} 
+@media screen and (min-width: 576px) and (max-width: 767px){
+  /* border:3px solid green; */
+  .header>.all>.left>a>img{
+    width:100px;
+    top:57px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  /* border:3px solid yellow; */
+  .header>.all>.left>a>img{
+    width:110px;
+    top:52px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  /* border:3px solid orange; */
+  .header>.all>.left>a>img{
+    width:120px;
+    top:47px;
+  }
+}
+/* ================header>all>right (選單位置)================ */
+/* ========================(1)搜尋bar========================= */
+.header>.all>.right>.right_01{
+  margin-top: 15px;
+  width:88%;
+  text-align: right;
+}
+.header>.all>.right>.right_01>.search_box{
+  display: inline-block;
+  width:40%;
+  vertical-align: top;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.header>.all>.right>.right_01>.search_box>.search_form{
+  width:100%;
+}
+.header>.all>.right>.right_01>.search_box>.search_form>.search_area{
+  width: calc(100% - 30px);
+  height:30px;
+  vertical-align: top;
+  border:1px solid white;
+  border-right: 0;
+  outline: none;
+}
+.header>.all>.right>.right_01>.search_box>.search_form>.search_go{
+  width:30px;
+  height:30px;
+  font-size: 8px;
+  font-weight: 520;
+  vertical-align: top;
+  border:1px solid #aaaaaa;
+  border-left: 0;
+  color:#444444;
+  background-color: #aaaaaa;
+  outline: none;
+}
+/* ========================(2-1)文字選單區========================= */
+.header>.all>.right>.right_02{
+  width:88%;
+  margin-top: 13px;
+  text-align: right;
+  display:inline-block;
+  vertical-align: top;
+}
+.header>.all>.right>.right_02>.menu_text_list{
+  list-style: none;
+  display: inline-block;
+  padding:0;
+  vertical-align: top;
+}
+.header>.all>.right>.right_02>.menu_text_list>a>li{
+  display: inline-block;
+  font-size: 18px;
+  color:white;
+  margin-left: 25px;
+}
+.header>.all>.right>.right_02>.menu_text_list>a>li:hover{
+  color: #AE0000;
+  font-weight: bold;
+}
+/* ==== RWD :(2-1)文字選單區(調整文字清單:預設顯示,小於991PX時消失,換漢堡出現)==== */
+@media screen and (max-width: 991px){
+   /* border:3px solid yellow;  */
+  .header>.all>.right>.right_02>.menu_text_list{
+    display:none;
+  }
+}
+/* ========================(2-2)icon字選單區========================= */
+.header>.all>.right>.right_02>.menu_icon{
+  display: inline-block;
+  vertical-align: top;
+}
+.header>.all>.right>.right_02>.menu_icon>a>img{
+  width:30px;
+  height:30px;
+  display: inline-block;
+  /* border:1px solid green; */
+  margin-left: 20px;
+}
+/* ==========================(3)漢堡選單區========================= */
+.header>.all>.right>.right_03{
+  width:11%;
+  margin-top: 13px;
+  text-align: right;
+  display:inline-block;
+  vertical-align: top;
+}
+.header>.all>.right>.right_03>img{
+  height:30px;
+}
+/* ==== RWD: (3)漢堡選單區 (調整漢堡:預設顯示，大於991PX時消失)==== */
+@media screen and (min-width: 992px){
+   /* border:3px solid yellow;  */
+  .header>.all>.right>.right_03{
+    display:none;
+  }
+}
+/* =======================(4)漢堡下方的選單區====================== */
+.header>.all>.right>.right_04{
+  width: 100%;
+  background-color: #666666;
+  position: absolute;
+  right:0;
+  top:100px;
+  opacity:0.88;
+  z-index:15;
+  display:none;
+}
+.header>.all>.right>.right_04>ul{
+  padding:0;
+}
+.header>.all>.right>.right_04>ul>a{
+  text-decoration: none;
+}
+.header>.all>.right>.right_04>ul>a>li{
+  font-size:22px;
+  font-weight:500;
+  color: #DDDDDD;
+  list-style: none;
+  text-decoration: none;
+  text-align:center;
+  height: 70px;
+  border-bottom :2px solid gray;
+  height: calc((100vh - 100px)/7);
+  line-height: calc((100vh - 100px)/7);
+}
+/* ======================== RWD : header區========================  */
+@media screen and (max-width: 575px){
+  .header>.all{
+    width:100%;
+    /* border:3px solid blue; */
+  }
+} 
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .header>.all{
+    width:560px;
+    /* border:3px solid green; */
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .header>.all{
+    width:750px;
+    /* border:3px solid yellow; */
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  .header>.all{
+    width:980px;
+    /* border:3px solid orange; */
+  }
+}
+/* ================================================================  */
+/* ======================footer====================== */
+footer{
+  width:100%;
+  height:75px;
+  background-color: black;
+  font-size: 14px;
+  color:white;
+  text-align: center;
+  line-height: 75px;
+}
+
+
+
+
+
+

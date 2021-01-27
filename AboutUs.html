@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-tw" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>ENDLESS|AboutUs_RWD</title>
+    <link rel="stylesheet" href="./CSS/HeaderFooter.css">
+    <link rel="stylesheet" href="./CSS/AboutUs.css">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+<!-- ======================================header 開始======================================= -->
+<!-- ======================================header 開始======================================= -->
+<header class="header">
+    <div class="all">
+<!-- =================header_left 放logo=============== -->
+          <div class="left">
+            <a href="./index.html" class="my_logo"><img src="./imgs/logo.png"></a>
+          </div>
+<!-- =================header_right 放選單=============== -->
+          <div class="right">
+<!-- ==============搜尋bar============== -->
+              <div class="right_01">
+                  <div class="search_box">
+                        <form class="search_form" action="./index.html" method="post">
+                            <input type="text" name="" value="" class="search_area" placeholder="請輸入關鍵字">
+                            <button type="button" name="button" class="search_go">GO</button>
+                        </form>
+                  </div>
+              </div>
+<!-- ===============選單============= -->
+              <div class="right_02">
+                    <ul class="menu_text_list">
+                        <a href="./My_women.html"><li class="women">女 裝</li></a>
+                        <a href="./My_men.html"><li class="man">男 裝</li></a>
+                        <a href="#"><li class="kids">童 裝</li></a>
+                        <a href="#"><li class="accessories">配 件</li></a>
+                        <a href="./MyShop.html"><li class="map">門市資訊</li></a>
+                        <a href="./ContactUs.html"><li class="contact">聯絡我們</li></a>
+                        <a href="AboutUs.html"><li class="about_endless">關於我們</li></a>
+                    </ul>
+
+                    <div class="menu_icon">
+                        <a href="#"><img src="./imgs/cart.png" alt=""></a>
+                        <a href="./MyFavorite.html"><img src="./imgs/heart.png" alt=""></a>
+                        <a class="number" href="#" ><img src="./imgs/number.png" alt=""></a>
+                        
+                    </div>
+              </div>
+<!-- ==============漢堡按鈕============== -->
+              <div class="right_03">
+                      <img src="./imgs/burger.png" alt="" class="burger_btn">
+              </div>
+<!-- ==============漢堡選單============== -->
+              <div class="right_04">
+                  <ul>
+                      <a href="./My_women.html"><li>女 裝</li></a>
+                      <a href="./My_men.html"><li>男 裝</li></a>
+                      <a href="#"><li>童 裝</li></a>
+                      <a href="#"><li>配 件</li></a>
+                      <a href="./MyShop.html"><li>門市資訊</li></a>
+                      <a href="./ContactUs.html"><li>聯絡我們</li></a>
+                      <a href="AboutUs.html"><li>關於我們</li></a>
+                  </ul>
+              </div>
+<!-- ================================ -->
+        </div>
+    </div>
+  </header>
+<!-- ===========jQuery控制漢保選單出現===================== -->
+
+  <script>
+      $(document).ready(function(){
+           $('.right_03').click(function(){
+                $('.right_04').slideToggle();
+                // $('.right_04').fadeToggle();
+          })
+      });
+  </script>
+<!-- ======================================header 結束======================================= -->
+<!-- ======================================header 結束======================================= -->
+
+
+
+<!-- ==========================about us======================================= -->
+
+    <div class="about_us">
+        <div class="about_us_01">
+            <h2>關於我們</h2>
+            <span>
+                ENDLESS 是一個時尚品牌，<br>
+                始終為所有人提供最新款式和靈感，<br>
+                提供所有人無拘束的穿著方式。<br>
+                從時尚單品、<br>
+                獨特的設計師合作款 、<br>
+                價格實惠基本款，<br>
+                所有季節，所有樣式，<br>
+                滿足顧客需求！<br>
+                <br>
+                ENDLESS不僅僅是時尚，<br>
+                平價、品質 深植於品牌DNA中，<br>
+                不僅讓顧客能探索個人風格，<br>
+                更提供再次創造與  延續時尚的機會。
+            </span>
+        </div>
+    </div>
+
+
+<!-- ==========================footer======================================= -->
+    <footer>
+        <p>copyright &copy All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
