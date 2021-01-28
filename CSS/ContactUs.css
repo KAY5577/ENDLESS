@@ -235,12 +235,12 @@ h2{
 
 @media screen and (max-width: 575px) {
     .contact_us_bg>.contact_us_all>.contact_us_with_form>.form>.level_1>:nth-child(1)>label{
-      font-size: 14px;
+      font-size: 13px;
     }
     .contact_us_bg>.contact_us_all>.contact_us_with_form>.form>button{
       width:30%;
       height:30px;
-      font-size: 14px; 
+      font-size: 13px; 
       position:absolute;
       bottom:2%;
     }
