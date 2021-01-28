@@ -26,7 +26,7 @@
 /* ==================標題:關於我們================== */
 .about_us>.about_us_01>h2{
   font-size: 36px;
-  color:maroon;
+  color:#AE0000;
   display:block;
   margin: 0;
   margin: 100px 0px 30px 57px;
@@ -55,6 +55,7 @@
   } 
   .about_us>.about_us_01>h2{
     margin-left: 25px;
+    margin-top: 85px;
   }
   .about_us>.about_us_01>span{
     margin-left:25px;
