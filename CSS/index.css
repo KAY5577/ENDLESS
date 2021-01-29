@@ -677,7 +677,7 @@ h2{
   transform: scale(1);
   transition: .5s;
 }
-.new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_3>a>img:hover{
+.new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_3>a:hover>img{
   transform: scale(1.2);
 }
 /* ====================RWD : #3 #4 (圖片區)============================  */ 
