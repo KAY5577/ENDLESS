@@ -303,11 +303,14 @@ h2{
     font-size: 13px;
     line-height: 26px;
   }
+  .contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form>.form>button{
+    font-size: 12px;
+  }
 }
 
 /* =================表單> button 發送 ============= */
 .contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form>.form>button{
-  width:20%;
+  width:23%;
   height:30px;
   font-size: 16px;
   font-weight: bold;
