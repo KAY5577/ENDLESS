@@ -12,6 +12,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .test{
+            background-color: rgba(0, 0, 0, 0)
+
+        }
+    </style>
 </head> 
 
 <body>  
@@ -87,88 +94,91 @@
 <!-- ======================================header 結束======================================= -->
 
 
+<!-- ===============================about the shops========================================== -->
 
-
-<!-- ===============================Contact_Us========================================== -->
 
 <div class="contact_us_bg">
-    <div class="bg_color">
-        <div class="contact_us_all">
-            <h2 class="main_taitle">聯絡我們</h2>
-            <div class="contact_us_with_form" id="form_area">
+    <div class="test">
+            <div class="contact_us_all">
+                    <h2>聯絡我們</h2>
+                    <div class="contact_us_with_form" id="form_area">
 
-                <form action="" method="get" class="form">
+                        <form action="" method="get" class="form">
 
-                    <div class="level_1">
-                        <div>
-                            <label>姓&emsp;&emsp;名:</label>
-                        </div>
-                        <div>
-                            <input type="text" name="username" id="input_name" placeholder=" 請輸入您的名稱">
-                        </div>
+                            <div class="level_1">
+                                <div>
+                                    <label>姓名:</label>
+                                </div>
+                                <div>
+                                    <input type="text" name="username" id="input_name" placeholder=" 請輸入您的名稱">
+                                </div>
+                            </div>
+                            
+
+                            <div class="level_1">
+                                <div>
+                                    <label>電子信箱:</label>
+                                </div>
+                                <div>
+                                    <input type="email" name="email" placeholder=" 請輸入您的電子信箱">
+                                </div>
+                            </div>
+
+
+                            <div class="level_1">
+                                <div>
+                                    <label>聯絡電話: </label>
+                                </div>
+                                <div>
+                                    <input type="phonenumber" name="phonenumber" placeholder=" 請輸入您的電話號碼">
+                                </div>
+                            </div>
+
+
+                            <div class="level_1">
+                                <div>
+                                    <label>聯絡訊息: </label>
+                                </div>
+                                <div>
+                                    <textarea name="notes" placeholder=" 請輸入您想傳遞給我們的訊息"></textarea>
+                                </div>
+                            </div>
+
+                            <button type="submit">送出</button>
+
+                        </form>
                     </div>
-                    
-
-                    <div class="level_1">
-                        <div>
-                            <label>電子信箱:</label>
-                        </div>
-                        <div>
-                            <input type="email" name="email" placeholder=" 請輸入您的電子信箱">
-                        </div>
-                    </div>
-
-
-                    <div class="level_1">
-                        <div>
-                            <label>聯絡電話: </label>
-                        </div>
-                        <div>
-                            <input type="phonenumber" name="phonenumber" placeholder=" 請輸入您的電話號碼">
-                        </div>
-                    </div>
-
-
-                    <div class="level_1">
-                        <div>
-                            <label>聯絡訊息: </label>
-                        </div>
-                        <div>
-                            <textarea name="notes" placeholder=" 請輸入您想傳遞給我們的訊息"></textarea>
-                        </div>
-                    </div>
-
-                    <button type="submit">送出</button>
-
-                </form>
+                    <p>*當您聯絡ENDLESS客服部門時，您的個人資料將依據我們的隱私權公告處理.*</p>
             </div>
-            <p class="notice">*當您聯絡ENDLESS客服部門時，您的個人資料將依據我們的隱私權公告處理.*</p>
-        </div>
     </div>
-    
 </div>
 
 <!-- ===========jQuery控制背景圖 透明度===================== -->
+<!-- <script>
+    $(document).ready(function(){
+         $('#input_name').keydown(function(){
+              $('#form_area').css('background','gray');
+        })
+         $('#input_name').mouseout(function(){
+              $('#form_area').css('background','white');
+        })
+    });
+</script> -->
 
 <script>
-
     $(document).ready(function(){
          $('#form_area').mouseover(function(){
-              $(this).css('opacity','.85');
-              $('.bg_color').css('background','rgba(0, 0, 0, .6)');
-              $('.notice').css('color','white');
-              $('.main_taitle').css('color','white');
+              $(this).css('opacity','0.9');
+              $('.contact_us_bg').css('bacground.opacity','0.5');
          })
 
          $('#form_area').mouseout(function(){
               $(this).css('opacity','0.6');
-              $('.bg_color').css('background','rgba(0, 0, 0, 0)');
-              $('.notice').css('color','black');
-              $('.main_taitle').css('color','#AE0000');
+              $('.contact_us_bg').css('bacground.opacity','1'); 
          })  
     });
-
 </script>
+
 
 <!-- =========================================footer======================================== -->
 
@@ -177,3 +187,6 @@
 </footer>
 </body>
 </html>
+
+
+background:  50% 100% no-repeat; 

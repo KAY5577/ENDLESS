@@ -1,205 +1,205 @@
-
 body{
-  margin:0 auto;
   box-sizing: border-box;
 }
 
-.mark_my_shop{
-  width:1200px;
-  margin:0 auto;
-  font-size: 36px;
-  color:black;
-  font-weight: bold;
-  padding-left: 37px;
-  padding-top: 100px;
-  /* padding-bottom: 20px; */
+/* 現在位置: */
+.header>.all>.right>.right_02>.menu_text_list>a>.map{
+  border-bottom: 2px solid white;
 }
 
-.my_shop{
-  width:1200px;
-  /* border:1px solid red; */
-  margin:0 auto;
-  position:relative;
-}
-
-.my_shop>img{
+/* ================大背框(含背景圖)================ */
+.myshop_bg{
   width:100%;
+  /* height: calc(100vh - 75px); */
 }
 
-.my_shop>.shop_all{
-  width:53%;
-  height:800px;
-  /* border:1px solid blue; */
-  /* background-color: lightyellow; */
-  position:absolute;
-  top:50px;
-  left:50px;
-}
-
-.my_shop>.shop_all>.shop_01, .shop_02, .shop_03{
-  width:100%;
-  height:30%;
-  /* border:1px solid green; */
-  background-color: #404040;
-}
-
-/* ===================門市001===================== */
-
-.my_shop>.shop_all>.shop_01>.shop_01_jpg{
-  height:100%;
-}
-
-.my_shop>.shop_all>.shop_01{
-  position: relative;
-}
-
-.my_shop>.shop_all>.shop_01>.name_of_shop{
-  padding-top: 5px;
-  font-size: 21px;
-  font-weight: bold;
-  color:white;
-  position: absolute;
-  top:1%;
-  left:47%;
-}
-
-.my_shop>.shop_all>.shop_01>.weekday{
-  margin:0;
-  padding:0;
-  font-size: 14px;
-  line-height: 1.3;
-  color: #DDDDDD;
-  list-style: none;
-  position: absolute;
-  top:0;
-  left:47%;
-  top: 20%;
-}
-
-.my_shop>.shop_all>.shop_01>.tel{
-  font-size: 18px;
-  color: white;
-  position: absolute;
-  top:78%;
-  left:47%;
-}
-
-.my_shop>.shop_all>.shop_01>.add{
-  font-size: 18px;
-  color: white;
-  position: absolute;
-  top:88%;
-  left:47%;
-}
-
-/* ===================門市002===================== */
-.my_shop>.shop_all>.shop_02>.shop_01_jpg{
-  height:100%;
-}
-
-.my_shop>.shop_all>.shop_02{
-  position: relative;
-}
-
-.my_shop>.shop_all>.shop_02>.name_of_shop{
-  padding-top: 5px;
-  font-size: 21px;
-  font-weight: bold;
-  color:white;
-  position: absolute;
-  top:1%;
-  left:47%;
-}
-
-.my_shop>.shop_all>.shop_02>.weekday{
-  margin:0;
-  padding:0;
-  font-size: 14px;
-  line-height: 1.3;
-  color: #DDDDDD;
-  list-style: none;
-  position: absolute;
-  top:0;
-  left:47%;
-  top: 20%;
-}
-
-.my_shop>.shop_all>.shop_02>.tel{
-  font-size: 18px;
-  color: white;
-  position: absolute;
-  top:78%;
-  left:47%;
-}
-
-.my_shop>.shop_all>.shop_02>.add{
-  font-size: 18px;
-  color: white;
-  position: absolute;
-  top:88%;
-  left:47%;
-}
-
-/* ===================門市003===================== */
-.my_shop>.shop_all>.shop_03>.shop_01_jpg{
-  height:100%;
-}
-
-.my_shop>.shop_all>.shop_03{
-  position: relative;
-}
-
-.my_shop>.shop_all>.shop_03>.name_of_shop{
-  padding-top: 5px;
-  font-size: 21px;
-  font-weight: bold;
-  color:white;
-  position: absolute;
-  top:1%;
-  left:47%;
-}
-
-.my_shop>.shop_all>.shop_03>.weekday{
-  margin:0;
-  padding:0;
-  font-size: 14px;
-  line-height: 1.3;
-  color: #DDDDDD;
-  list-style: none;
-  position: absolute;
-  top:0;
-  left:47%;
-  top: 20%;
-}
-
-.my_shop>.shop_all>.shop_03>.tel{
-  font-size: 18px;
-  color: white;
-  position: absolute;
-  top:78%;
-  left:47%;
-}
-
-.my_shop>.shop_all>.shop_03>.add{
-  font-size: 18px;
-  color: white;
-  position: absolute;
-  top:88%;
-  left:47%;
-}
-
-/* ===================門市002===================== */
-.my_shop>.shop_all>.shop_02{
-  margin: 6% 0 6% 0;
-}
-
-
-/* ===================門市003===================== */
-.my_shop>.shop_all>.shop_03{
-}
-
-/* ===================門市背景框===================== */
-/* .my_shop>.shop_all>.shop_01, .shop_02, .shop_03{
-  border-radius: 0  50px  0  50px;
-  overflow: hidden;
+/* ============大背框(背景圖)============ */
+/* .myshop_bg>.myshop_bg_color{
+  background-image: url("../imgs/myshop_bg(1).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top 100px;
 } */
+
+/* ====================主背框==================== */
+.myshop_bg>.myshop_bg_color>.myshop_all{
+  width: 1200px;
+  /* height:500px; */
+  border:3px solid purple;
+  margin:0 auto;
+  padding-top:100px;
+} 
+
+/* =====================標題===================== */
+h2{
+  font-size: 36px;
+  color:#AE0000;
+  /* display:block; */
+  margin: 80px 0px 0 57px;
+ }
+
+ 
+/* ==============大div: 放三門市div============== */
+.myshop_bg>.myshop_bg_color>.myshop_all>.shops_box{
+   width:100%;
+   display:flex;
+   flex-direction: row;
+   flex-wrap:wrap;  
+  /* justify-content: space-between;  */
+  /* align-items:center; */
+}
+
+
+/* ======小div: 放各門市(台北&高雄)====== */
+/* ======小div: 放各門市(台北&高雄)====== */
+/* ======小div: 放各門市(台北&高雄)====== */
+.myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop{
+  width:60%;
+  overflow: hidden;
+  position:relative;
+  margin:2% auto 2% 57px;
+  /* 水平位移 垂直位移 模糊 擴散 顏色 */
+  box-shadow: 4px 4px 5px 4px #555555;
+}
+
+/* =====小div: 放各門市(底圖)===== */
+.myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>img{
+  width:100%;
+}
+
+/* =====小div: 放各門市(地圖)===== */
+.myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.map_box{
+  width:30%;
+  border-radius: 50%;
+  overflow: hidden;
+  position:absolute;
+  top:50%;
+  left:20%;
+  transform: translateY(-50%);
+  /* 水平位移 垂直位移 模糊 擴散 顏色 */
+  box-shadow: 2px 2px 5px 2px #444444;
+}
+
+.myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.map_box>img{
+  width:100%;
+}
+
+/* =====小div: 放各門市(資訊)===== */
+.myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop{
+  width:47%;
+  height:100%;
+  position: absolute;
+  top:0;
+  right:0;
+}
+
+/* =====各門市(標題)===== */
+.myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>h3{
+  font-size: 22px;
+  font-weight: bold;
+  color: #cccccc;
+  margin: 8% auto 3% 0;
+  color:white;
+}
+
+/* =====各門市(時間)===== */
+.myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>ul{
+  padding-top:2%;
+  padding-bottom: 2%;
+}
+
+.myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>ul>li{
+  font-size: 14px;
+  font-weight: bold;
+  color: #cccccc;
+  list-style: none;
+  line-height: 1.2;
+  padding-left: 15%;
+}
+
+/* ===各門市(電話地址)=== */
+.myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>p{
+  font-size: 16px;
+  font-weight: bold;
+  color: #cccccc;
+  margin: 1% auto 1% 0;
+}
+
+
+/* ======小div: 放各門市(台中)====== */
+/* ======小div: 放各門市(台中)====== */
+/* ======小div: 放各門市(台中))====== */
+.myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b{
+  width:60%;
+  overflow: hidden;
+  position:relative;
+  text-align: right;
+  margin-left: calc(40% - 57px);
+  box-shadow: 4px 4px 5px 4px #555555;
+}
+
+/* =====小div: 放各門市(底圖)===== */
+.myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>img{
+  width:100%;
+}
+
+/* =====小div: 放各門市(地圖)===== */
+.myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.map_box{
+  width:30%;
+  border-radius: 50%;
+  overflow: hidden;
+  position:absolute;
+  top:50%;
+  right:20%;
+  transform: translateY(-50%);
+  /* 水平位移 垂直位移 模糊 擴散 顏色 */
+  box-shadow: 2px 2px 5px 2px #444444;
+}
+
+.myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.map_box>img{
+  width:100%;
+}
+
+/* =====小div: 放各門市(資訊)===== */
+.myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop{
+  width:47%;
+  height:100%;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+/* =====各門市(標題)===== */
+.myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>h3{
+  font-size: 22px;
+  font-weight: bold;
+  color: #cccccc;
+  margin: 8% auto 3% 0;
+  padding-left: 10%;;
+  color:white;
+}
+
+/* =====各門市(時間)===== */
+.myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>ul{
+  padding-top:2%;
+  padding-bottom: 2%;
+  padding-left: 23%;;
+}
+
+.myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>ul>li{
+  font-size: 14px;
+  font-weight: bold;
+  color: #cccccc;
+  list-style: none;
+  line-height: 1.2;
+  padding-left: 15%;
+}
+
+/* ===各門市(電話地址)=== */
+.myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>p{
+  font-size: 16px;
+  font-weight: bold;
+  color: #cccccc;
+  margin: 1% auto 1% 0;
+  padding-left: 10%;;
+}

@@ -7,57 +7,55 @@
   border-bottom: 2px solid white;
 }
 
-
 /* ================大背框(含背景圖)================ */
 .contact_us_bg{
   box-sizing: border-box;
   /* border: 2px solid red; */
   width:100%;
   height: calc(100vh - 75px);
-
-  /* background：rgba（0,0,0,.6); */
-  /* background-blend-mode: multiply; */
-
+  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../imgs/contact_us.jpg") no-repeat center top 100px/ cover; */
   background-image: url("../imgs/contact_us.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top 100px;
  }
 
+ /* ============大背框(調背景圖透明度)============ */
+ .contact_us_bg>.bg_color{
+  background: rgba(0, 0, 0, 0);
+ }
+
  /* ====================主背框==================== */
-.contact_us_bg>.contact_us_all{ 
+.contact_us_bg>.bg_color>.contact_us_all{ 
   width:1200px;
   margin:0 auto;
   padding-top: 100px;
   height: calc(100vh - 75px);
-  border:2px solid purple;
+  /* border:2px solid purple; */
   position: relative;
 }
-
 
 /* =====================標題===================== */
 h2{
   font-size: 36px;
   color:#AE0000;
   display:block;
-  margin: 0;
-  margin: 100px 0px 30px 57px;
+  margin: 80px 0px 30px 57px;
  }
 
 /* =======================RWD : 主背框 & H2標題======================= */
 @media screen and (max-width: 575px){
-  .contact_us_bg>.contact_us_all{ 
+  .contact_us_bg>.bg_color>.contact_us_all{ 
     width: 100%;
     border:5px solid blue;
   } 
   h2{
     margin-left: 25px;
-    margin-top: 85px;
   }
 } 
 
 @media screen and (min-width: 576px) and (max-width: 767px){
-  .contact_us_bg>.contact_us_all{ 
+  .contact_us_bg>.bg_color>.contact_us_all{ 
     width: 560px;
     border:5px solid green;
   } 
@@ -67,7 +65,7 @@ h2{
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
-  .contact_us_bg>.contact_us_all{ 
+  .contact_us_bg>.bg_color>.contact_us_all{ 
     width: 750px;
     border:5px solid yellow;
   }
@@ -77,7 +75,7 @@ h2{
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px){
-  .contact_us_bg>.contact_us_all{ 
+  .contact_us_bg>.bg_color>.contact_us_all{ 
     width: 975px;
     border:5px solid orange;
   }
@@ -86,11 +84,9 @@ h2{
   }
 }
 
-
 /* =================放置表單的div================ */
-.contact_us_bg>.contact_us_all>.contact_us_with_form{
+.contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form{
   width:40%;
-  height: 50%;
   border-radius: 5px;
   background-color: white;
   opacity: .6;
@@ -100,19 +96,15 @@ h2{
   top: 42%;
   left: 11%;
   /* 水平位移 垂直位移 模糊 擴散 顏色 */
-  box-shadow: 2px 2px 3px 2px #444444;
+  box-shadow: 4px 4px 5px 4px #555555;
+  text-align: center;
 }
-
-.contact_us_bg>.contact_us_all>.contact_us_with_form:hover{
-  opacity: .9;
-}
-
 
 /* =======================RWD : 放置表單的div ======================== */
 
 @media screen and (max-width: 575px){
   /* border:5px solid blue; */
-  .contact_us_bg>.contact_us_all>.contact_us_with_form{
+  .contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form{
     width:90%;
     position:absolute;
     left: 50%;
@@ -121,7 +113,7 @@ h2{
 } 
 @media screen and (min-width: 576px) and (max-width: 767px){
   /* border:5px solid green; */
-  .contact_us_bg>.contact_us_all>.contact_us_with_form{
+  .contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form{
     width:80%;
     position:absolute;
     left: 50%;
@@ -130,7 +122,7 @@ h2{
 }
 @media screen and (min-width: 768px) and (max-width: 991px){
   /* border:5px solid yellow; */
-  .contact_us_bg>.contact_us_all>.contact_us_with_form{
+  .contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form{
     width:63%;
     position:absolute;
     left: 50%;
@@ -139,7 +131,7 @@ h2{
 }
 @media screen and (min-width: 992px) and (max-width: 1199px){
   /* border:5px solid orange; */
-  .contact_us_bg>.contact_us_all>.contact_us_with_form{
+  .contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form{
     width:46%;
     position:absolute;
     left: 13%;
@@ -147,7 +139,7 @@ h2{
 }
 
 /* ==============表單下方的隱私權公告============= */
-.contact_us_bg>.contact_us_all>p{
+.contact_us_bg>.bg_color>.contact_us_all>p{
   font-size: 14px;
   font-weight: bold;
   color:black;
@@ -159,7 +151,7 @@ h2{
 /* =====================RWD : 表單下方的隱私權公告==================== */
 
 @media screen and (max-width: 464px){
-  .contact_us_bg>.contact_us_all>p{
+  .contact_us_bg>.bg_color>.contact_us_all>p{
     font-size: 12px;
     position: absolute;
     left: 3px;
@@ -169,7 +161,7 @@ h2{
 
 @media screen and (min-width: 465px) and (max-width: 575px){
   /* border:5px solid blue; */
-  .contact_us_bg>.contact_us_all>p{
+  .contact_us_bg>.bg_color>.contact_us_all>p{
     font-size: 12px;
     position: absolute;
     left: 25px;
@@ -177,7 +169,7 @@ h2{
 } 
 @media screen and (min-width: 576px) and (max-width: 767px){
   /* border:5px solid green; */
-  .contact_us_bg>.contact_us_all>p{
+  .contact_us_bg>.bg_color>.contact_us_all>p{
     font-size: 13px;
     position: absolute;
     left: 42px;
@@ -186,7 +178,7 @@ h2{
 }
 @media screen and (min-width: 768px) and (max-width: 991px){
   /* border:5px solid yellow; */
-  .contact_us_bg>.contact_us_all>p{
+  .contact_us_bg>.bg_color>.contact_us_all>p{
     position: absolute;
     left: 15%;
   }
@@ -194,14 +186,14 @@ h2{
 }
 @media screen and (min-width: 992px) and (max-width: 1199px){
   /* border:5px solid orange; */
-  .contact_us_bg>.contact_us_all>p{
+  .contact_us_bg>.bg_color>.contact_us_all>p{
     position: absolute;
     left: 13%;
   }
 }
 
 /* ========================表單=================== */
-.contact_us_bg>.contact_us_all>.contact_us_with_form>.form{
+.contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form>.form{
   width: 100%;
   height:100%;
   display: inline-block;
@@ -209,23 +201,22 @@ h2{
 }
 
 /* ==========表單>label> 姓名 信箱 電話 ========== */
-.contact_us_bg>.contact_us_all>.contact_us_with_form>.form>.level_1{
+.contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form>.form>.level_1{
   width:100%;
-  height:30px;
   display: inline-block;
   margin:0 auto;
-  /* margin-bottom: 15px; */
   margin-bottom: 3%;
   display:inline-block;
+  border:1px solid red;
 }
 
-.contact_us_bg>.contact_us_all>.contact_us_with_form>.form>.level_1>:nth-child(1){
+.contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form>.form>.level_1>:nth-child(1){
   width:22%;
   display:inline-block;
   vertical-align: top;
 }
 
-.contact_us_bg>.contact_us_all>.contact_us_with_form>.form>.level_1>:nth-child(1)>label{
+.contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form>.form>.level_1>:nth-child(1)>label{
   height:30px;
   font-size: 16px;
   line-height: 30px;
@@ -234,42 +225,88 @@ h2{
 /* ===========RWD : 表單>label> 姓名 信箱 電話 & 發送按鈕 文字大小============= */
 
 @media screen and (max-width: 575px) {
-    .contact_us_bg>.contact_us_all>.contact_us_with_form>.form>.level_1>:nth-child(1)>label{
-      font-size: 13px;
+    .contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form>.form>.level_1>:nth-child(1)>label{
+      font-size: 14px;
     }
-    .contact_us_bg>.contact_us_all>.contact_us_with_form>.form>button{
+    .contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form>.form>button{
       width:30%;
       height:30px;
-      font-size: 13px; 
-      position:absolute;
+      font-size: 14px; 
       bottom:2%;
     }
-}
-
+  }
 
 /* ===============表單>label> input ============== */
-.contact_us_bg>.contact_us_all>.contact_us_with_form>.form>.level_1>:nth-child(2){
+.contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form>.form>.level_1>:nth-child(2){
   width:78%;
   display:inline-block;
+  font-size: 16px;
 }
 
-.contact_us_bg>.contact_us_all>.contact_us_with_form>.form>.level_1>:nth-child(2)>input{
+.contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form>.form>.level_1>:nth-child(2)>input{
   width:100%;
   padding:0;
   vertical-align: top;
   height:30px;
+  font-size: 16px;
+
 }
 
 /* =================表單> text-area =============== */
-.contact_us_bg>.contact_us_all>.contact_us_with_form>.form>.level_1>:nth-child(2)>textarea{
+.contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form>.form>.level_1>:nth-child(2)>textarea{
   width:100%;
   padding:0;
   vertical-align: top;
   height:110px;
+  font-size: 16px;
 } 
 
+/* ============RWD : 表單 - 左欄label 與 右欄input&textarea 占比 ============== */ 
+@media screen and (max-width: 575px) {
+  .contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form>.form>.level_1>:nth-child(1){
+    width:28%;
+    font-size: 12px;
+  }
+  .contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form>.form>.level_1>:nth-child(2){
+    width:72%;
+    font-size: 12px;
+  }
+}
+
+/* ===========RWD : 表單>label>  input & text-area ============= */
+
+@media screen and (max-width: 320px) {
+  .contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form>.form>.level_1>:nth-child(2){
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form>.form>.level_1>:nth-child(2)>input{
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form>.form>.level_1>:nth-child(2)>textarea{
+    font-size: 12px;
+    line-height: 24px;
+  }
+}
+
+@media screen (min-width: 360px) and (max-width: 575px) {
+  .contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form>.form>.level_1>:nth-child(2){
+    font-size: 13px;
+    line-height: 13px;
+  }
+  .contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form>.form>.level_1>:nth-child(2)>input{
+    font-size: 13px;
+    line-height: 13px;
+  }
+  .contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form>.form>.level_1>:nth-child(2)>textarea{
+    font-size: 13px;
+    line-height: 26px;
+  }
+}
+
 /* =================表單> button 發送 ============= */
-.contact_us_bg>.contact_us_all>.contact_us_with_form>.form>button{
+.contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form>.form>button{
   width:20%;
   height:30px;
   font-size: 16px;
@@ -278,14 +315,9 @@ h2{
   border:1px solid black;
   border-radius: 3px;
   background-color: black;
-  /* margin: 22% 40% 0px 40%; */
-  position:absolute;
-  bottom:5%;
-  left:50%;
-  transform: translate(-50%);
 }
 
-.contact_us_bg>.contact_us_all>.contact_us_with_form>.form>button:hover{
+.contact_us_bg>.bg_color>.contact_us_all>.contact_us_with_form>.form>button:hover{
   background-color: #AE0000;
   border:1px solid #AE0000;
 }
