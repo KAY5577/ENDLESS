@@ -216,7 +216,7 @@ h2{
     /* =====各門市(標題)(台中)===== */
     .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>h3{
       font-size: 16px;
-      margin: 5% auto 0.8% 10%; 
+      margin: 5% auto 1.2% 10%; 
     }
     /* =====各門市(時間)(台中)===== */
     .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>ul{
@@ -229,6 +229,9 @@ h2{
       font-size: 12px;
       font-weight: 400;
     }
+    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>p>span{
+      display:block;
+    }
 
     /* 台北高雄: */
     /* =====小div: 放各門市(資訊)(台北高雄)===== */
@@ -238,7 +241,7 @@ h2{
     /* =====各門市(標題)(台北高雄)===== */
     .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>h3{
       font-size: 16px;
-      margin: 6% auto 0.8% 0; 
+      margin: 6% auto 1.2% 0; 
     }
     /* =====各門市(時間)(台北高雄)===== */
     .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>ul{
@@ -249,6 +252,9 @@ h2{
       margin: 0 auto 0.8% 0;
       font-size: 12px;
       font-weight: 400;
+    }
+    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>p>span{
+      display:block;
     }
 }
 
