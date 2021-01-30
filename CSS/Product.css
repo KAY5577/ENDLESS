@@ -1,154 +1,178 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
 body{
-  background-color: white;
+  background-color: #DDDDDD;
 }
 
+.product_all{
+  width:100%;
+  position:relative;
+}
 
-.product{
-  margin:0 auto;
+.product_all>.product_bg_2{
+  width:100%;
+  height: 30%;
+  position:absolute;
+  top:55%;
+  left:0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+/* ========================左側款式圖區=========================== */
+/* ========================左側款式圖區=========================== */
+.product_all>.product_bg_1{
   width:1200px;
-  /* background-color: lightblue; */
+  height:calc(100vh - 75px);
+  margin:0 auto;
+  border:3px solid purple;
+  padding-top: 12%;
+  position: relative;
 }
 
-/* =============產品上左 款式圖================== */
-
-.product>.product_left{
- width:50%;
- /* background-color: lightyellow; */
- display: inline-block;
- vertical-align: top;
- margin-top: 100px;
+.product_all>.product_bg_1>.product_left{
+  width:60%;
+  background-color: white;
+  border:1px solid white;
+  /* 水平位移 垂直位移 模糊 擴散 顏色 */
+  box-shadow: 7px 6px 3px 2px #888;
+  margin-left: 7%;
 }
 
-.product>.product_left>.product_left_01_jpg, .product_left_02_jpg, .product_left_03_jpg, .product_left_04_jpg{
-  width:48%;
-  margin-bottom: 25px;
+.product_all>.product_bg_1>.product_left>.product_left_01{
+  width:99%;
+  /* border:2px solid pink; */
+  background-color: white;
+  margin:0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin:1.5% auto;
+  overflow: hidden;
 }
 
-.product>.product_left>.product_left_01_jpg, .product_left_03_jpg{
-  margin-right: 4%;
+.product_all>.product_bg_1>.product_left>.product_left_01>.img_01{
+  width: 38%;
 }
 
-/* =============產品上右 款式介紹================== */
-
-.product>.product_right{
- width:50%;
- /* background-color: lightgreen; */
- display: inline-block;
- vertical-align: top;
- margin-top: 100px;
+.product_all>.product_bg_1>.product_left>.product_left_01>.img_02{
+  width: 18.35%;
 }
 
-.product>.product_right>.style_name, .style_price{
+#show_02{
+  display:none;
+}
+
+
+/* =========================右側 介紹區=========================== */
+/* =========================右側 介紹區=========================== */
+
+.product_all>.product_bg_1>.product_right{
+  width:32%;
+  background-color: white;
+  border:1px solid white;
+  position: absolute;
+  top:47%;
+  left:60%;
+  /* 水平位移 垂直位移 模糊 擴散 顏色 */
+  box-shadow: 7px 6px 3px 2px #888;
+}
+
+.product_all>.product_bg_1>.product_right>.product_right_01{
+  width:96%;
+  background-color: #DDDDDD;
+  border:1px solid white;
+  margin:2% auto;
+  padding: 2.5% 7%;
+}
+
+.product_all>.product_bg_1>.product_right>.product_right_01>p{
+  font-size: 16px;
+  color: #444444;
   margin:0;
-  font-size: 30px;
-  color: black;
-  /* border:1px solid green; */
-  padding-left: 10px;
+  padding:0;
+  line-height: 30px;
 }
 
-.product>.product_right>.style_name{
-    padding-bottom: 10px;
-}
-
-.product>.product_right>.style_price{
-  padding-bottom: 30px;
-}
-
-.product>.product_right> .style_explain_title, .style_explain_text, .style_explain_number{
-  margin:0;
-  font-size: 21px;
-  color: gray;
-  padding-left: 10px;
-}
-
-.product>.product_right> .style_explain_number{
-  padding-top: 15px;
-  padding-bottom: 30px;
-}
-
-.product>.product_right> .style_color, .style_size, .style_qty{
-  font-size: 21px;
+.style_name, .style_price, .style_price{
+  font-weight: bold;
   color:black;
-  padding-left: 10px;
 }
 
-.product>.product_right>.select_qty_pcs{
-  width: 12%;
-  height: 30px;
-  background-color: lightgray;
-  margin-left: 10px;
-  border:1px solid lightgray;
-  padding-left: 20px;
+/* ==============右側 表單區================ */
+/* ==============右側 表單區================ */
+
+
+.product_all>.product_bg_1>.product_right>.product_right_01>.the_form_area>.form_of_product{
+  font-size: 16px;
+  line-height: 30px;
+  color: red;
 }
 
-/* <div class="product">
-    <div class="product_right">
-         <div class="style_qty">數量-</div>
-         <select class="select_qty_pcs" name="select_qty_pcs">
-           <option value="1" selected>1</option>
-           <option value="2" selected>2</option>
-           <option value="3" selected>3</option>
-           <option value="4" selected>4</option>
-           <option value="5" selected>5</option>
-         </select>
-    </div>
-</div> */
-
-
-.product>.product_right>.style_color_list>img{
-  width:23%;
-  margin-left: 10px;
-  padding-bottom: 40px;
+.product_all>.product_bg_1>.product_right>.product_right_01>.the_form_area>.form_of_product>img{
+  width:18%;
+  margin-left:3%;
+  border:3px solid white;
+  border-radius: 3px;
+  /* 水平位移 垂直位移 模糊 擴散 顏色 */
+  box-shadow: 1px 1px 1px 1px #888;
+  transform: scale(1);
+  transition: .5s;   
+}
+  
+.product_all>.product_bg_1>.product_right>.product_right_01>.the_form_area>.form_of_product>img:hover{
+  transform: scale(1.1);
 }
 
-.product>.product_right>.style_size_items>.btn_size{
-  width: 10%;
-  height: 30px;
-  background-color: lightgray;
-  margin-left: 10px;
-  border:1px solid lightgray;
-  margin-bottom: 40px;
-  font-size: 18px;
+.product_all>.product_bg_1>.product_right>.product_right_01>.the_form_area>.form_of_product>select{
+  width:18%;
+  margin-left:3%;
 }
 
-.product>.product_right>.size_explain>.size_guide{
-  width: 22%;
-  height: 30px;
-  background-color: lightgray;
-  margin-left: 10px;
-  border:1px solid lightgray;
-  margin-bottom: 40px;
-  font-size: 18px;
+.product_all>.product_bg_1>.product_right>.product_right_01>.the_form_area>.form_of_product>button{
+  width:33%;
+  margin-right:3%;
 }
 
-.product>.product_right>.size_explain>.model_size{
-  font-size: 18px;
-  color:gray;
-  padding-left: 10px;
+
+/* ===================================RWD========================================== */
+@media screen and (min-width: 320px) and (max-width: 419px){
+  .product_all>.product_bg_1{
+    border:5px solid pink;
+    /* width: 100%; */
+} 
 }
 
-.product>.product_right>.style_qty{
-  display: inline-block;
-  vertical-align: top;
+@media screen and (min-width: 420px) and (max-width: 575px){
+  .product_all>.product_bg_1{
+    border:5px solid blue;
+    /* width: 100%; */
+  } 
+  
+} 
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .product_all>.product_bg_1{
+    border:5px solid green;
+    /* width: 560px; */
+  } 
+ 
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .product_all>.product_bg_1{
+    border:5px solid yellow;
+    /* width: 750px; */
+  } 
+ 
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  .product_all>.product_bg_1{
+    border:5px solid orange;
+    /* width: 980px; */
+  } 
+
 }
 
-.product>.product_right>.btn_style_qty{
-  width: 15%;
-  height: 30px;
-  background-color: lightgray;
-  margin-left: 10px;
-  border:1px solid lightgray;
-  vertical-align: top;
-  font-size: 18px;
-}
-
-.product>.product_right>.btn_shopping_cart, .btn_my_lovely{
-  width: 40%;
-  height: 40px;
-  background-color: lightgray;
-  margin-left: 10px;
-  display: block;
-  margin-top: 40px;
-  font-size: 18px;
-  border:1px solid lightgray;
-}

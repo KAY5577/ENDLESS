@@ -89,67 +89,87 @@
   <!-- ======================================header 結束======================================= -->
 
 
-  <!-- ==========================Product======================================= -->
+  <!-- =======================================  Product ======================================= -->
+  <!-- =======================================  Product ======================================= -->
 
-    <div class="product">
+  <div class="product_all">
 
-
-        <div class="product_left">
-             <img src="./imgs/product_left_01.jpg" alt="" class="product_left_01_jpg">
-             <img src="./imgs/product_left_02.jpg" alt="" class="product_left_02_jpg">
-             <img src="./imgs/product_left_03.jpg" alt="" class="product_left_03_jpg">
-             <img src="./imgs/product_left_04.jpg" alt="" class="product_left_04_jpg">
-        </div>
+      <!-- ====================大div內有　左上：側款式圖區塊　＆　右下：款式資訊=================== -->
+      <div class="product_bg_1">
 
 
-        <div class="product_right">
-             <div class="style_name">基本羅紋高領毛衣</div>
-             <div class="style_price">NT$690</div>
+          <div class="product_left" id="show_01">
+              <div class="product_left_01" >
+                  <img class="img_01" src="./imgs/product_a1.jpg" id="change_01">
+                  <img class="img_02" src="./imgs/product_a2a3.jpg" id="change_0203">
+                  <img class="img_01" src="./imgs/product_a4.jpg" id="change_02">
+              </div>
+          </div>
 
-             <div class="style_explain_title">產品說明-</div>
-             <div class="style_explain_text">長袖針織衫，羅紋面料，高領。提供多種顏色。</div>
-             <div class="style_explain_number">產品編號- 20201201001</div>
-
-             <div class="style_color">顏色-</div>
-             <div class="style_color_list">
-                  <img src="./imgs/style_color_01.jpg" alt="" class="style_color_01_jpg">
-                  <img src="./imgs/style_color_02.jpg" alt="" class="style_color_02_jpg">
-                  <img src="./imgs/style_color_03.jpg" alt="" class="style_color_03_jpg">
-                  <img src="./imgs/style_color_04.jpg" alt="" class="style_color_04_jpg">
-             </div>
-
-
-             <div class="style_size">尺碼-</div>
-             <div class="style_size_items">
-                  <button type="button" name="button_xs" class="btn_size">XS</button>
-                  <button type="button" name="button_s" class="btn_size">S</button>
-                  <button type="button" name="button_m" class="btn_size">M</button>
-                  <button type="button" name="button_l" class="btn_size">L</button>
-                  <button type="button" name="button_xl" class="btn_size">XL</button>
-                  <button type="button" name="button_xxl" class="btn_size">XXL</button>
-             </div>
+          <div class="product_left" id="show_02">
+              <div class="product_left_01" >
+                  <img class="img_01" src="./imgs/product_b1.jpg" id="change_01">
+                  <img class="img_02" src="./imgs/product_b2b3.jpg" id="change_0203">
+                  <img class="img_01" src="./imgs/product_b4.jpg" id="change_02">
+              </div>
+          </div>
 
 
-             <div class="size_explain">
-                  <button type="button" name="size_explain" class="size_guide">尺寸指南</button>
-                  <span class="model_size">(模特5.84英尺/ 178厘米)</span>
-             </div>
+          <div class="product_right">
+              <div class="product_right_01">
+                  <p class="style_name">羅紋毛衣</p>
+                  <p class="style_price">NT$690</p>
+    
+                  <p class="style_explain_title">產品說明 : 長袖針織衫，羅紋面料。 </p>
+                  <p class="style_explain_number">產品編號 : 20201201001</p>
 
 
-             <div class="style_qty">數量-</div>
-             <select class="select_qty_pcs" name="select_qty_pcs">
-               <option value="1" selected>1</option>
-               <option value="2" >2</option>
-               <option value="3" >3</option>
-               <option value="4" >4</option>
-               <option value="5" >5</option>
-             </select>
-             <button type="button" name="shopping_cart" class="btn_shopping_cart">加入購物車</button>
-             <button type="button" name="my_lovely" class="btn_my_lovely">加入收藏</button>
-        </div>
-    </div>
 
-<!-- =========================================footer======================================== -->
+                  <div class="the_form_area">
+                          <form action="" method="get" class="form_of_product">
+                                <label class="style_color">顏色-</label>
+                                <img src="./imgs/product_a5.jpg" alt=""  id ="color_01_jpg">
+                                <img src="./imgs/product_b5.jpg" alt=""  id ="color_02_jpg">
+                                <br>
+
+
+                                <label class="style_size">尺碼-</label>
+                                <select class="select_qty_pcs" name="select_qty_pcs">
+                                      <option value="XS" >XS</option>
+                                      <option value="S" >S</option>
+                                      <option value="M" selected >M</option>
+                                      <option value="L" >L</option>
+                                      <option value="XL" >XL</option>
+                                      <option value="2L" >2L</option>
+                                </select>
+                                <br>
+
+
+                                <label class="style_qty">數量-</label>
+                                <select class="select_qty_pcs" name="select_qty_pcs">
+                                      <option value="1" selected>1</option>
+                                      <option value="2" >2</option>
+                                      <option value="3" >3</option>
+                                      <option value="4" >4</option>
+                                      <option value="5" >5</option>
+                                </select>
+                                <br>
+
+                                <button type="submit" name="shopping_cart" class="btn_shopping_cart">加入購物車</button>
+                                <button type="submit" name="my_lovely" class="btn_my_lovely">加入收藏</button>
+                        </form>
+                  </div>
+
+
+              </div>
+          
+      </div>
+      <!-- 這個div只是用來作背景 -->
+      <div class="product_bg_2"></div>
+
+  </div>
+
+ <!-- =========================================footer======================================== -->
 
     <footer>
         <p>copyright &copy All Rights Reserved</p>
@@ -157,6 +177,24 @@
 
     <script>
         AOS.init();
+    </script>
+
+     <!-- ===========jQuery控制選小圖 換大圖===================== -->
+
+    <script>
+
+      $(document).ready(function(){
+          $('#color_01_jpg').click(function(){
+                $('#show_02').css('display','none');
+                $('#show_01').css('display','block');
+          })
+
+          $('#color_02_jpg').click(function(){
+                $('#show_01').css('display','none');
+                $('#show_02').css('display','block');
+          })  
+      });
+
     </script>
 
   </body>
