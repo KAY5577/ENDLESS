@@ -22,17 +22,16 @@ body{
 .myshop_bg>.myshop_bg_color>.myshop_all{
   width: 1200px;
   /* height:500px; */
-  border:3px solid purple;
+  /* border:3px solid purple; */
   margin:0 auto;
   padding-top:100px;
 } 
 
 /* =====================標題===================== */
 h2{
-  font-size: 36px;
+  font-size: 28px;
   color:#AE0000;
-  /* display:block; */
-  margin: 80px 0px 0 57px;
+  margin: 80px auto 0 7px;
  }
  
 /* ==============大div: 放三門市div============== */
@@ -49,10 +48,10 @@ h2{
 /* ======小div: 放各門市(台北&高雄)====== */
 /* ======小div: 放各門市(台北&高雄)====== */
 .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop{
-  width:53%;
+  width:51%;
   overflow: hidden;
   position:relative;
-  margin:2% auto 2% 57px;
+  margin:1% auto 1% 5%;
   /* 水平位移 垂直位移 模糊 擴散 顏色 */
   box-shadow: 4px 4px 7px 5px #777;
 }
@@ -88,22 +87,22 @@ h2{
 
 /* =====各門市(標題)(台北&高雄)===== */
 .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>h3{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: #cccccc;
-  margin: 9% auto 4% 0;
+  margin: 7% auto 4% 0;
   color:white;
 }
 
 /* =====各門市(時間)(台北&高雄)===== */
 .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>ul{
   padding:0;
-  margin: 0 auto 4% 24%;
+  margin: 0 auto 4% 10%;
 }
 
 .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>ul>li{
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 550;
   color: #cccccc;
   list-style: none;
   line-height: 1.2;
@@ -112,23 +111,22 @@ h2{
 /* ===各門市(電話地址)(台北&高雄)=== */
 .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>p{
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 550;
   color: white;
-  margin: 1% auto 1% 0;
 }
 
 /* ===8888888888888888888888888888888888===小div: 放各門市(台中)===8888888888888888888888888888888888=== */
 /* ======小div: 放各門市(台中)====== */
 /* ======小div: 放各門市(台中))====== */
 .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b{
-  width:53%;
+  width:51%;
   overflow: hidden;
   position:relative;
   text-align: left;
   /* margin-left: calc(40% - 57px); */
   box-shadow: 4px 4px 7px 5px #777;
   align-self: flex-end;
-  margin-right: 57px;
+  margin: 1% 5% 1% auto;
 }
 
 /* =====小div: 放各門市(底圖)(台中)===== */
@@ -162,22 +160,22 @@ h2{
 
 /* =====各門市(標題)(台中)===== */
 .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>h3{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: #cccccc;
-  margin: 9% auto 4% 13%; 
+  margin: 7% auto 4% 10%; 
   color:white;
 }
 
 /* =====各門市(時間)(台中)===== */
 .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>ul{
   padding:0;
-  margin: 0 auto 4% 37%;
+  margin: 0 auto 4% 20%;
 }
 
 .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>ul>li{
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 550;
   color: #cccccc;
   list-style: none;
   line-height: 1.2;
@@ -186,284 +184,121 @@ h2{
 /* ===各門市(電話地址)(台中)=== */
 .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>p{
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 550;
   color: white;
-  margin: 1% auto 1% 13%;
+  margin: 1% auto 1% 10%;
 }
 
-/* =====================RWD : 門市名稱 & 時間 & 電話 & 地址========================= */
 
-@media screen and (min-width: 320px) and (max-width: 537px){
-   /* border:5px solid red; */
-   /* 台中: */ 
-   /* ======小div: 放各門市(台中))====== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b{
-      width:95%;
-      margin:0 auto 5% auto;
-    }
-    /* 台北高雄: */
-    /* ======小div: 放各門市(台北&高雄)====== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop{
-      width:95%;
-      margin:0 auto 5% auto;
-    } 
-
-
-    /* =====小div: 放各門市(資訊)(台中)===== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop{
-      width:50%;
-    }
-    /* =====各門市(標題)(台中)===== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>h3{
-      font-size: 16px;
-      margin: 5% auto 1.2% 10%; 
-    }
-    /* =====各門市(時間)(台中)===== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>ul{
-      display:none;
-    }
-
-    /* ===各門市(電話地址)(台中)=== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>p{
-      margin: 0 auto 0 10%;
-      font-size: 12px;
-      font-weight: 400;
-    }
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>p>span{
-      display:block;
-    }
-
-    /* 台北高雄: */
-    /* =====小div: 放各門市(資訊)(台北高雄)===== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop{
-      width:50%;
-    }
-    /* =====各門市(標題)(台北高雄)===== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>h3{
-      font-size: 16px;
-      margin: 6% auto 1.2% 0; 
-    }
-    /* =====各門市(時間)(台北高雄)===== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>ul{
-      display:none;
-    }
-    /* ===各門市(電話地址)(台北高雄)=== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>p{
-      margin: 0 auto 0.8% 0;
-      font-size: 12px;
-      font-weight: 400;
-    }
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>p>span{
-      display:block;
-    }
-}
-
-@media screen and (min-width: 538px) and (max-width: 575px){
-    /* border:5px solid blue; */
-    /* 台中: */ 
-    /* ======小div: 放各門市(台中))====== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b{
-      width:90%;
-      margin:0 auto 5% auto;
-    }
-    /* 台北高雄: */
-    /* ======小div: 放各門市(台北&高雄)====== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop{
-      width:90%;
-      margin:0 auto 5% auto;
-    }
-}
-
-@media screen and (min-width: 576px) and (max-width: 767px){
-    /* border:5px solid green; */
-    /* 台中: */
-    /* ======小div: 放各門市(台中))====== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b{
-      width:85%;
-      margin:0 auto 5% auto;
-    }
-    /* 台北高雄: */
-    /* ======小div: 放各門市(台北&高雄)====== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop{
-      width:85%;
-      margin:0 auto 5% auto;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px){
-    /* border:5px solid yellow; */
-    /* 台中: */
-    /* ======小div: 放各門市(台中))====== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b{
-      width:63%;
-      margin-left: 47px;
-    }
-    /* 台北高雄: */
-    /* ======小div: 放各門市(台北&高雄)====== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop{
-      width:63%;
-      margin-left: 47px;
-    }
-  }
-
-  @media screen and (min-width: 538px) and (max-width: 991px){
-    /* =====小div: 放各門市(資訊)(台中)===== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop{
-      width:50%;
-    }
-    /* =====各門市(標題)(台中)===== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>h3{
-      font-size: 16px;
-      margin: 5% auto 0.8% 10%; 
-    }
-    /* =====各門市(時間)(台中)===== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>ul{
-      margin: 0 auto 0.8% 25%;
-      font-size: 12px;
-      font-weight: 400;
-    }
-
-    /* ===各門市(電話地址)(台中)=== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>p{
-      margin: 0 auto 0 10%;
-      font-size: 12px;
-      font-weight: 400;
-    }
-
-    /* 台北高雄: */
-    /* =====小div: 放各門市(資訊)(台北高雄)===== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop{
-      width:50%;
-    }
-    /* =====各門市(標題)(台北高雄)===== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>h3{
-      font-size: 16px;
-      margin: 6% auto 0.8% 0; 
-    }
-    /* =====各門市(時間)(台北高雄)===== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>ul{
-      margin: 0 auto 0.8% 15%;
-      font-size: 12px;
-      font-weight: 400;
-    }
-    /* ===各門市(電話地址)(台北高雄)=== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>p{
-      margin: 0 auto 0.8% 0;
-      font-size: 12px;
-      font-weight: 400;
-    }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1199px){
-    /* border:5px solid orange; */
-
-    /* 台中: */
-    /* ======小div: 放各門市(台北&高雄)====== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b{
-      margin-left: 52px;
-    }
-    /* =====小div: 放各門市(資訊)(台中)===== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop{
-      width:50%;
-    }
-    /* =====各門市(標題)(台中)===== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>h3{
-      font-size: 18px;
-      margin: 7% auto 1% 13%; 
-    }
-    /* =====各門市(時間)(台中)===== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>ul{
-      margin: 0 auto 1% 28%;
-    }
-    /* ===各門市(電話地址)(台中)=== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>p{
-      margin: 0 auto 1% 13%;
-      font-size: 13px;
-    }
-
-    /* 台北高雄: */
-     /* ======小div: 放各門市(台北&高雄)====== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop{
-      margin-left: 52px;
-    }
-    /* =====小div: 放各門市(資訊)(台北高雄)===== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop{
-      width:50%;
-    }
-    /* =====各門市(標題)(台北高雄)===== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>h3{
-      font-size: 18px;
-      margin: 7% auto 1% 0; 
-    }
-    /* =====各門市(時間)(台北高雄)===== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>ul{
-      margin: 0 auto 1% 25%;
-    }
-    /* ===各門市(電話地址)(台北高雄)=== */
-    .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>p{
-      margin: 0 auto 1% 0;
-      font-size: 13px;
-    }
-}
-
-  /* ========================= */
-  /* ========================= */
-  /* ========================= */
-
-
-/* =========================RWD : 一屏高========================= */
-/* @media screen and (max-width: 1199px){
- .myshop_all{
-   height: calc(100vh - 75px);
- }
-} */
 
 /* =========================RWD : 主背框 & h2主標題========================= */
-@media screen and (min-width: 320px) and (max-width: 537px){
-  /* border:5px solid pink; */
+
+@media screen and (max-width: 575px){
   .myshop_bg>.myshop_bg_color>.myshop_all{
-    border:5px solid red;
+    /* border:5px solid blue; */
     width: 100%;
   }
   h2{
-    margin-left: 7px;
-    margin-top: 47px;
-    font-size: 20px;
+    font-size: 24px;
   }
-}
-@media screen and (min-width: 538px) and (max-width: 575px){
-  .myshop_bg>.myshop_bg_color>.myshop_all{
-    border:5px solid blue;
-    width: 100%;
+
+  .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop{
+    width:96%;
+    margin:4% auto;
   }
-  h2{
-      margin-left: 25px;
+  .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b{
+    width:96%;
+    margin:4% auto;
+  }
+
+
+  /* 時間隱藏 */
+  .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>ul{
+    display:none;
+  }
+  .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>ul{
+    display:none;
+  }
+
+  /* 標題 */
+  .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>h3{
+    font-size: 16px;
+    padding-top: 4%;
+    font-weight: 550;
+  }
+  .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>h3{
+    font-size: 16px;
+    padding-top: 4%;
+    font-weight: 550;
+    padding-left:7%;
+  }
+
+  /* 電話店址 */
+  .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>p{
+    font-size: 12px;
+    padding-top: 4%;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>p{
+    font-size: 12px;
+    padding-top: 4%;
+    font-weight: 500;
+    line-height: 1.2;
+    padding-left:7%;
+  }
+
+
+  .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.information_of_shop>p>span{
+    display:block;
+  }
+  .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.information_of_shop>p>span{
+    display:block;
   }
 } 
- @media screen and (min-width: 576px) and (max-width: 767px){
+
+
+@media screen and (min-width: 576px) and (max-width: 767px){
   .myshop_bg>.myshop_bg_color>.myshop_all{
-    border:5px solid green;
+    /* border:5px solid green; */
     width: 560px;
   }
   h2{
-    margin-left: 42px;
+    font-size: 24px;
+  }
+  .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop{
+    width:97%;
+    margin:3% auto;
+  }
+  .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b{
+    width:97%;
+    margin:3% auto;
   }
 }
-  @media screen and (min-width: 768px) and (max-width: 991px){
+@media screen and (min-width: 768px) and (max-width: 991px){
   .myshop_bg>.myshop_bg_color>.myshop_all{
-    border:5px solid yellow;
+    /* border:5px solid yellow; */
     width: 750px;
    }  
    h2{
-    margin-left: 47px;
+    font-size: 24px;
   }
+  .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop{
+    width:75%;
   }
-  @media screen and (min-width: 992px) and (max-width: 1199px){
+  .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b{
+    width:75%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
   .myshop_bg>.myshop_bg_color>.myshop_all{
-    border:5px solid orange;
+    /* border:5px solid orange; */
     width: 980px;
-    } 
-    h2{
-      margin-left: 52px;
-    }
+  } 
+  .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop{
+    width:57%;
   }
+  .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b{
+    width:57%;
+  }
+}

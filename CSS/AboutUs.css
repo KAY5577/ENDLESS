@@ -25,41 +25,33 @@
 }
 /* ==================標題:關於我們================== */
 .about_us>.about_us_01>h2{
-  font-size: 36px;
+  font-size: 28px;
   color:#AE0000;
   display:block;
   margin: 0;
-  margin: 100px 0px 30px 57px;
+  margin: 90px 0px 30px 7px;
 }
 /* ==================標題:文字內容================== */
 .about_us>.about_us_01>span{
-  font-size: 20px;
-  font-weight: bold;
-  color: #555555;
+  font-size: 18px;
+  font-weight: 550;
+  color: #444444;
   display:block;
   line-height: 1.4;
   padding-left:0;
-  margin-left: 135px;
+  margin-left: 10%;
   padding-bottom: 30px;
 } 
 
 /* ============================RWD============================ */
 
-/* 這個節點 沒有效果!! */
-/* 這個節點 沒有效果!! */
-/* 這個節點 沒有效果!! */
 @media screen and (max-width: 575px){
   .about_us>.about_us_01{
     width: 100%;
     /* border:5px solid blue; */
   } 
-  .about_us>.about_us_01>h2{
-    margin-left: 25px;
-    margin-top: 85px;
-  }
   .about_us>.about_us_01>span{
-    margin-left:25px;
-    font-size: 18px;
+    font-size: 14px;
   }
 } 
 
@@ -68,12 +60,9 @@
     width: 560px;
     /* border:5px solid green; */
   } 
-  .about_us>.about_us_01>h2{
-    margin-left: 42px;
-  }
   .about_us>.about_us_01>span{
-    margin-left:45px;
-  }
+    font-size: 16px;
+  } 
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -81,24 +70,15 @@
     width: 750px;
     /* border:5px solid yellow; */
   }
-  .about_us>.about_us_01>h2{
-    margin-left: 47px;
-  }
   .about_us>.about_us_01>span{
-    margin-left:125px;
+    font-size: 16px;
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px){
   .about_us>.about_us_01{
-    width: 975px;
+    width: 980px;
     /* border:5px solid orange; */
-  }
-  .about_us>.about_us_01>h2{
-    margin-left: 52px;
-  }
-  .about_us>.about_us_01>span{
-    margin-left:130px;
   }
 }
 
