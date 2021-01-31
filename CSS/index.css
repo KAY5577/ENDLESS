@@ -68,7 +68,6 @@
 @media screen and (max-width: 575px){
   .home_banner>.home_banner_box{
     width:100%;
-    /* border:5px solid blue; */
   }
   .home_banner>.home_banner_box>.banner_slider_this{
     width: 100%;
@@ -77,7 +76,6 @@
 @media screen and (min-width: 576px) and (max-width: 767px){
   .home_banner>.home_banner_box{
     width: 560px;
-    /* border:5px solid green; */
   }
   .home_banner>.home_banner_box>.banner_slider_this{
     width: 90%;
@@ -86,7 +84,6 @@
 @media screen and (min-width: 768px) and (max-width: 991px){
   .home_banner>.home_banner_box{
     width: 750px;
-    /* border:5px solid yellow; */
   }
   .home_banner>.home_banner_box>.banner_slider_this{
     width: 70%;
@@ -95,7 +92,6 @@
 @media screen and (min-width: 992px) and (max-width: 1199px){
   .home_banner>.home_banner_box{
     width: 975px;
-    /* border:5px solid orange; */
   }
   .home_banner>.home_banner_box>.banner_slider_this{
     width: 65%;
@@ -111,33 +107,30 @@
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  /* border:1px solid blue; */
 }
 
 .home_button_01>.home_button_02{
   width:1200px;
-  /* height:296px; */
   margin:0 auto;
   display: flex;
   justify-content: space-between; 
-  /* justify-content: space-between; 橫向對齊 */
   align-items:center;
-  /* align-items:center;直向對齊 */
   flex-directoin:row;
   flex-wrap:wrap;
+  padding-left: 1%;
+  padding-right: 1%;
   /* border:3px solid purple; */
 }
 
+/* ===========banner下方的四張圖片=========== */
 .home_button_01>.home_button_02>.home_button_03{
-  /* width:250px; */
   width: 22%;
-  margin-top: 2.3%;
-  margin-bottom: 2.3%;
-  /* height:228px; */
-  /* height: 77%; */
+  margin-top: 2.2%;
+  margin-bottom: 2.2%;
   overflow: hidden;
   position:relative;
-  /* border:3px solid purple; */
+  /* 水平位移 垂直位移 模糊 擴散 顏色 */
+  box-shadow: 2px 2px 2px 1px #666;
 }
 
 .home_button_01>.home_button_02>.home_button_03>a>img{
@@ -145,30 +138,33 @@
 }
 
 .home_button_01>.home_button_02>.home_button_03>a>button{
-  font-size: 18px;
-  line-height:15.4%;
-  font-weight: 700;
-  color: white;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 550;
+  color: #444444;
   /* width:110px; */
-  width: 45%;
-  /* height:35px; */
-  height: 15.4%;
-  border:2px solid white;
+  width: 43%;
+  padding:3%;
+  border:1px solid white;
   border-radius: 2px;
-  background-color: #444444;
+  background-color: white;
   position:absolute;
   top: 85%;
   left: 50%;
   transform: translate(-50%,-50%);
   cursor: pointer;
+  /* 水平位移 垂直位移 模糊 擴散 顏色 */
+  box-shadow: 2px 2px 2px 1px #666;
 }
 .home_button_01>.home_button_02>.home_button_03>a>button:hover{
-  border:2px solid white;
-  background-color: white;
-  color: #444444;
+  border:1px solid #777777;
+  background-color: #777777;
+  color: white;
 }
 
 /* ==================== RWD : banner 下方 選單區====================  */
+
+
 @media screen and (max-width: 575px){
       .home_button_01{
         background-image: none;
@@ -184,8 +180,9 @@
         width: 47%;
       }
       .home_button_01>.home_button_02>.home_button_03>a>button{
-        font-size: 18px;
-      } 
+        width: 52%;
+        font-size: 15px;
+      }
 } 
 @media screen and (min-width: 576px) and (max-width: 767px){
       .home_button_01>.home_button_02{
@@ -195,11 +192,10 @@
       .home_button_01>.home_button_02>.home_button_03{
         width: 23%;
       } 
+     
       .home_button_01>.home_button_02>.home_button_03>a>button{
-        font-size: 13px;
-      } 
-      .home_button_01>.home_button_02>.home_button_03>a>button{
-        width: 60%;
+        width: 65%;
+        font-size: 15px;
       }
 }
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -208,19 +204,15 @@
         /* border: 5px solid yellow; */
       } 
       .home_button_01>.home_button_02>.home_button_03>a>button{
-        font-size: 16px;
-      } 
-      .home_button_01>.home_button_02>.home_button_03>a>button{
-        width: 53%;
-      } 
+        width: 60%;
+      }
 }    
 @media screen and (min-width: 992px) and (max-width: 1199px){
       .home_button_01>.home_button_02{
-          width: 975px;
-          /* border: 5px solid orange; */
+        width: 975px;
+        /* border: 5px solid orange; */
       }   
 }
-
 
 /* ===========================新品上市區===========================  */
 /* ==================== 大背框:寬100%包含四大區 ===================  */
@@ -233,7 +225,7 @@
 h2{
   width: 1200px;
   margin:0 auto;
-  font-size: 36px;
+  font-size: 28px;
   color: #AE0000;
   padding-top:50px;
   padding-left:7px;
@@ -242,45 +234,35 @@ h2{
 
 /* =========================RWD : H2標題============================  */
 @media screen and (max-width: 575px){
-  /* border:5px solid blue; */
-  /* .new_area_bg_all>h2{ */
   h2{
     width: 100%;
-    font-size: 26px;
+    font-size:24px;
   }
 } 
 @media screen and (min-width: 576px) and (max-width: 767px){
-/* border:5px solid green; */
-  /* .new_area_bg_all>h2{ */
   h2{
     width: 560px;
-    font-size: 28px;
+    font-size:24px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px){
-/* border:5px solid yellow; */
-/* ====RWD:標題====  */ 
-  /* .new_area_bg_all>h2{ */
   h2{
     width: 750px;
-    font-size: 32px;
+    font-size:24px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px){
-/* border:5px solid orange; */
-  /* .new_area_bg_all>h2{ */
   h2{
     width: 975px;
-    font-size: 34px;
   }
 }
+
 
 /* ========單區大背框 100% 填灰色========  */
 .new_area_bg_all>.new_area_bg{
   width:100%;
   background-color: #777777;
 }
-
 
 /* ===========單區主背框 1200px==========  */
 .new_area_bg_all>.new_area_bg>.new_area_b01{
@@ -336,10 +318,10 @@ h2{
   position: absolute;
   top: 0;
   left: 0;
-  margin: 6% 7% 6% 7%;
-  width: 86%;
-  height: 88%;
-  border: 3.5px solid #555555;
+  margin: 5% 6%;
+  width: 88%;
+  height: 90%;
+  border: 3px solid #999999;
 }
 /* .box_b{
   position: absolute;
@@ -360,45 +342,52 @@ h2{
 }
 .new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_1>.box_b>span{
   font-size: 50px;
-  color:  #555555;
+  color:  #999999;
   position:absolute;
   top:45%;
   left:50%;
   transform: translate(-50%, -50%);
 }
 .new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_1>.box_b>a>.btn{
-  width:62%;
-  height: 13%;
-  font-size: 20px;
+  width:60%;
+  /* height: 13%; */
+  padding:3%;
+  font-size: 16px;
   font-weight: 550;
-  color:white;
-  border:3px solid white;
+  color: #444444;
+  background-color: white;
+  border:1px solid white;
   border-radius: 2px;
-  background-color: transparent;
+  /* background-color: transparent; */
   position:absolute;
   top:60%;
   left:50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+  /* 水平位移 垂直位移 模糊 擴散 顏色 */
+  box-shadow: 2px 2px 2px 1px #666;
 }
 .new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_1>.box_b>a>.btn:hover{
-  color: #444444;
-  background-color: white;
+  color: white;
+  background-color:#777777;
+  border:1px solid #777777;
 }
 
 /* ===================== RWD : #1(btn : 選購新品)=====================  */
+
 @media screen and (max-width: 575px){
   /* border:5px solid blue; */
   .new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_1>.box_b>span{
-    font-size: 38px;
+    font-size: 35px;
   }
   .new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_1>.box_b>a>.btn{
     width:65%;
-    height: 13%;
-    font-size: 18px;
     border:2px solid white;
     position:absolute;
     top:62%;
+  }
+  .new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_1>.box_b>a>.btn{
+    font-size: 12px;
   }
 } 
 @media screen and (min-width: 576px) and (max-width: 767px){
@@ -407,10 +396,8 @@ h2{
     font-size: 45px;
   }
   .new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_1>.box_b>a>.btn{
-    width:65%;
-    height: 13%;
-    font-size: 18px;
-    border:2px solid white;
+    width:55%;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -420,9 +407,6 @@ h2{
   }
   .new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_1>.box_b>a>.btn{
     width:75%;
-    height: 15%;
-    font-size: 15px;
-    border:2px solid white;
     position:absolute;
     top:62%;
   }
@@ -434,8 +418,6 @@ h2{
   }
   .new_area_bg_all>.new_area_bg>.new_area_b01>.new_area_02_1>.box_b>a>.btn{
     width:65%;
-    height: 14%;
-    font-size: 18px;
   }
 }
 
@@ -479,7 +461,7 @@ h2{
 
 /* ========基本文字設定========  */
 .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(1){
-  font-size: 23px;
+  font-size: 16px;
   font-weight: bold;
   color:#333333;
   position: absolute;
@@ -492,12 +474,12 @@ h2{
   font-weight: bold;
   color:#333333;
   position: absolute;
-  top:50%;
+  top:49%;
   left:10%;
 }
 
 .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(3){
-  font-size: 22px;
+  font-size: 16px;
   font-weight: bold;
   color:#333333;
   position: absolute;
@@ -512,21 +494,21 @@ h2{
   color: white;
   font-weight: 500;
   position: absolute;
-  top:33%;
+  top:48%;
   left:20%;
 }
 .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.style_name_women_22{
   color: white;
   font-weight: 500;
   position: absolute;
-  top:43%;
+  top:57%;
   left:20%;
 }
 .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.price_women_22{
   color: white;
   font-weight: 500;
   position: absolute;
-  top:51%;
+  top:66%;
   left:20%;
 } 
 
@@ -543,7 +525,7 @@ h2{
   color: white;
   font-weight: 500;
   position: absolute;
-  top:50%;
+  top:49%;
   left:13%;
 }
 .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.price_men_11{
@@ -567,7 +549,7 @@ h2{
   color: white;
   font-weight: 500;
   position: absolute;
-  top:52%;
+  top:51%;
   left:29%;
 }
 .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.price_men_22{
@@ -582,17 +564,17 @@ h2{
 /* ====童裝(第一圖)文字設定====  */
 .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.new_in_kid_11{
   position: absolute;
-  top:60%;
+  top:75%;
   left:42%;
 }
 .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.style_name_kid_11{
   position: absolute;
-  top:70%;
+  top:84%;
   left:42%;
 }
 .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.price_kid_11{
   position: absolute;
-  top:78%;;
+  top:93%;;
   left:42%;
 } 
 
@@ -602,73 +584,24 @@ h2{
   color: white;
   font-weight: 500;
   position: absolute;
-  top:55%;
+  top:56%;
   left:30%;
 }
 .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.style_name_kid_22{
   color: white;
   font-weight: 500;
   position: absolute;
-  top:84%;
+  top:83%;
   left:30%;
 }
 .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>.price_kid_22{
   color: white;
   font-weight: 500;
   position: absolute;
-  top:92%;
+  top:91%;
   left:30%;
 } 
 
-/* =============================== RWD : 基本文字 ===============================  */ 
-@media screen and (max-width: 575px){
-  /* border:5px solid blue; */
-      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(1){
-        font-size: 19px;
-      }
-      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(2){
-        font-size: 14px;
-      }
-      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(3){
-        font-size: 17px;
-      }
-} 
-@media screen and (min-width: 576px) and (max-width: 767px){
-  /* border:5px solid green; */
-      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(1){
-        font-size: 20px;
-      }
-      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(2){
-        font-size: 15px;
-      }
-      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(3){
-        font-size: 21px;
-      }
-}
-@media screen and (min-width: 768px) and (max-width: 991px){
-  /* border:5px solid yellow; */
-      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(1){
-        font-size: 17px;
-      }
-      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(2){
-        font-size: 13px;
-      }
-      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(3){
-        font-size: 16px;
-      }
-}
-@media screen and (min-width: 992px) and (max-width: 1199px){
-      /* border:5px solid orange; */
-      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(1){
-        font-size: 20px;
-      }
-      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(2){
-        font-size: 15px;
-      }
-      .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(3){
-        font-size: 21px;
-      }
-}
 /* =====================================================================  */ 
 
 /* ==========#3 #4 IMG 設定==========  */
@@ -681,6 +614,7 @@ h2{
   transform: scale(1.2);
 }
 /* ====================RWD : #3 #4 (圖片區)============================  */ 
+
 @media screen and (max-width: 575px){
   /* border:5px solid blue; */
   #not_showed,#not_showed_2{
@@ -689,7 +623,19 @@ h2{
   .new_area_bg_all>.new_area_bg>.new_area_b01>div{
     width:50%;
   }
-} 
+  .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(1){
+    font-size: 12px;
+  } 
+  
+  .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(2){
+    font-size:  12px;
+  }
+  
+  .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(3){
+    font-size:  12px;
+  }
+
+}
 @media screen and (min-width: 576px) and (max-width: 767px){
   /* border:5px solid green; */
   #not_showed,#not_showed_1{
@@ -697,6 +643,31 @@ h2{
   }
   .new_area_bg_all>.new_area_bg>.new_area_b01>div{
     width:50%;
+  }
+  .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(1){
+    font-size: 14px;
+  } 
+  
+  .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(2){
+    font-size:  14px;
+  }
+  
+  .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(3){
+    font-size:  14px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  /* border:5px solid yellow; */
+  .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(1){
+    font-size: 14px;
+  } 
+  
+  .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(2){
+    font-size:  14px;
+  }
+  
+  .new_area_bg_all>.new_area_bg>.new_area_b01>div>a>.box_a>:nth-child(3){
+    font-size:  14px;
   }
 }
 /* ================================================================  */ 
@@ -754,13 +725,12 @@ h2{
   bottom:5%;
   left:50%;
   transform: translate(-50%);
-  background-color: #444444;
-  opacity: .55;
+  background: rgba(0, 0, 0, .4);
 }
 
 .newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory>a>.accessory_text>:nth-child(1){
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   position:absolute;
   top:25%;
   left:17%;
@@ -768,7 +738,7 @@ h2{
 
 .newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory>a>.accessory_text>:nth-child(2){
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   position:absolute;
   top:50%;
   left:17%;
@@ -779,16 +749,16 @@ h2{
   position: absolute;
   top: 0;
   left: 0;
-  margin: 6% 7% 6% 7%;
-  width: 86%;
-  height: 88%;
-  border: 3.5px solid #555555;
+  margin: 5% 6%;
+  width: 88%;
+  height: 90%;
+  border: 3px solid #444444;
 }
 
 .text_accessory{
   font-size: 33px;
   font-weight: bold;
-  color: #555555;
+  color: #444444;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -796,13 +766,14 @@ h2{
 }
 
 .accessory_btn{
-    width:70%;
-    height: 15%;
-    font-size: 20px;
+    width:60%;
+    padding:3%;
+    font-size: 16px;
     font-weight: bold;
     color: white;
-    background-color: #333333;
-    border:2px solid white;
+    background-color: white;
+    border:1px solid white;
+    color:#444444;
     border-radius: 2px;
     position:absolute;
     top:53%;
@@ -810,12 +781,14 @@ h2{
     left: 50%;
     transform: translate(-50%);
     cursor: pointer;
+    /* 水平位移 垂直位移 模糊 擴散 顏色 */
+    box-shadow: 2px 2px 2px 1px #666;
 }
 
 .accessory_btn:hover{
-  color: #333333;
-  background-color: white;
-  border:2px solid #333333;
+  color: white;
+  background-color: #777777;
+  border:1px solid #777777;
 }
 
 /* =============================== RWD : 配件新品===============================  */
@@ -831,24 +804,24 @@ h2{
     font-size:12px;
   }
   .accessory_btn{
-    width:98%;
-    height: 25%;
-    font-size: 10px;
+    width:110%;
+    font-size: 12px;
   }
   .newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory>a>.accessory_text>:nth-child(1){
-    font-size: 14px;
+    font-size: 12px;
     position:absolute;
-    top:15%;
+    top:13%;
   }
   .newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory>a>.accessory_text>:nth-child(2){
-    font-size: 16px;
+    font-size: 12px;
     position:absolute;
-    top:50%;
+    top:53%;
   }
   .newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area{
     width:100%;
   }
 } 
+
 @media screen and (min-width: 576px) and (max-width: 767px){
   .newaccessories_area_bg_all>.newaccessories_area_bg{
     width: 560px;
@@ -859,8 +832,7 @@ h2{
   }
   .accessory_btn{
     width:90%;
-    height: 23%;
-    font-size: 13px;
+    font-size: 14px;
   }
   .newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory>a>.accessory_text>:nth-child(1){
     font-size: 14px;
@@ -868,14 +840,13 @@ h2{
     top:15%;
   }
   .newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory>a>.accessory_text>:nth-child(2){
-    font-size: 16px;
+    font-size: 14px;
     position:absolute;
     top:50%;
   }
   .newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area{
     width:100%;
   }
-  
 }
 @media screen and (min-width: 768px) and (max-width: 991px){
   .newaccessories_area_bg_all>.newaccessories_area_bg{
@@ -887,16 +858,13 @@ h2{
   }
   .accessory_btn{
     width:80%;
-    height: 20%;
-    font-size: 15px;
   }
   .newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory>a>.accessory_text>:nth-child(1){
-    font-size: 16px;
+    font-size: 14px;
   }
   .newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory>a>.accessory_text>:nth-child(2){
-    font-size: 18px;
+    font-size: 14px;
   }
-  
 }
 @media screen and (min-width: 992px) and (max-width: 1199px){
   .newaccessories_area_bg_all>.newaccessories_area_bg{
@@ -908,259 +876,10 @@ h2{
   }
   .accessory_btn{
     width:70%;
-    height: 15%;
-    font-size: 18px;
   }
-  .newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory>a>.accessory_text>:nth-child(1){
-    font-size: 16px;
-  }
-  .newaccessories_area_bg_all>.newaccessories_area_bg>.newaccessories_area>.accessory>a>.accessory_text>:nth-child(2){
-    font-size: 18px;
-  }
-  
 }
+
 /* =================================================================  */ 
 
 
 
-
-/* =================================================================  */ 
-
-@media screen and (max-width: 575px){
-  /* border:5px solid blue; */
- 
-} 
-@media screen and (min-width: 576px) and (max-width: 767px){
-  /* border:5px solid green; */
-
-}
-@media screen and (min-width: 768px) and (max-width: 991px){
-  /* border:5px solid yellow; */
-  
-}
-@media screen and (min-width: 992px) and (max-width: 1199px){
-  /* border:5px solid orange; */
-  
-}
-/* =================================================================  */ 
-
-
-
-/* =========================門市資訊========================= */
-
-.home_map_title{
-  margin:0 auto;
-  width:1200px;
-  box-sizing: border-box;
-  color:black;
-  font-weight: bold;
-  font-size: 36px;
-  /* border:1px solid blue; */
-  padding-left: 37px;
-  padding-top: 150px;
-  padding-bottom: 10px;
-}
-
-.home_map_01{
-  margin:0 auto;
-  box-sizing: border-box;
-  /* border:1px solid red; */
-  width:1200px;
-  height:530px;
-  margin-bottom: 70px;
-  position:relative;
-}
-
-.home_map_01>.home_map_tp, .home_map_tc, .home_map_ks{
-  margin:0 auto;
-  box-sizing: border-box;
-  width:30%;
-  border-radius: 10px;
-  /* border:1px solid black; */
-  background-color: #666666;
-  display:inline-block;
-}
-
-.home_map_01>.home_map_tp{
-  position:absolute;
-  top:0;
-  left:0;
-}
-
-.home_map_01>.home_map_tc{
-  position:absolute;
-  top:0;
-  left:50%;
-  transform: translate(-50%);
-}
-
-.home_map_01>.home_map_ks{
-  position:absolute;
-  top:0;
-  right:0;
-}
-
-/* ==========台北門市============= */
-.home_map_01>.home_map_tp>.home_map_tp_01>.home_map_tp_jpg{
-  width:92%;
-  margin:4%;
-  border-radius: 15px;
-}
-
-.home_map_01>.home_map_tp>.home_map_tp_02{
-  /* background-color: pink; */
-  width:92%;
-  height:200px;
-  margin:0 4% 4% 4%;
-  position: relative;
-  font-size: 16px;
-}
-
-.home_map_01>.home_map_tp>.home_map_tp_02>.name_of_shop{
-  font-size: 21px;
-  font-weight: bold;
-  position: absolute;
-  color:white;
-  top:0;
-  left:0;
-}
-
-.home_map_01>.home_map_tp>.home_map_tp_02>.weekday{
-  font-size: 14px;
-  font-weight: bold;
-  list-style: none;
-  line-height: 1.4;
-  margin:0;
-  color:#DDDDDD;
-  position: absolute;
-  top:0;
-  right:0;
-}
-
-.home_map_01>.home_map_tp>.home_map_tp_02>.tel{
-  font-size: 18px;
-  color:white;
-  font-weight: bold;
-  position: absolute;
-  bottom:27px;
-  left:0;
-}
-
-.home_map_01>.home_map_tp>.home_map_tp_02>.add{
-  font-size: 18px;
-  color:white;
-  font-weight: bold;
-  position: absolute;
-  bottom:0;
-  left:0;
-}
-
-/* ==========台中門市============= */
-.home_map_01>.home_map_tc>.home_map_tc_01>.home_map_tc_jpg{
-  width:92%;
-  margin:4%;
-  border-radius: 15px;
-}
-
-.home_map_01>.home_map_tc>.home_map_tc_02{
-  /* background-color: pink; */
-  width:92%;
-  height:200px;
-  margin:0 4% 4% 4%;
-  position: relative;
-  font-size: 16px;
-}
-
-.home_map_01>.home_map_tc>.home_map_tc_02>.name_of_shop{
-  font-size: 21px;
-  color:white;
-  font-weight: bold;
-  position: absolute;
-  top:0;
-  left:0;
-}
-
-.home_map_01>.home_map_tc>.home_map_tc_02>.weekday{
-  font-size: 14px;
-  font-weight: bold;
-  list-style: none;
-  line-height: 1.4;
-  margin:0;
-  color:#DDDDDD;
-  position: absolute;
-  top:0;
-  right:0;
-}
-
-.home_map_01>.home_map_tc>.home_map_tc_02>.tel{
-  font-size: 18px;
-  color:white;
-  font-weight: bold;
-  position: absolute;
-  bottom:27px;
-  left:0;
-}
-
-.home_map_01>.home_map_tc>.home_map_tc_02>.add{
-  font-size: 18px;
-  color:white;
-  font-weight: bold;
-  position: absolute;
-  bottom:0;
-  left:0;
-}
-
-/* ==========高雄門市============= */
-.home_map_01>.home_map_ks>.home_map_ks_01>.home_map_ks_jpg{
-  width:92%;
-  margin:4%;
-  border-radius: 15px;
-}
-
-.home_map_01>.home_map_ks>.home_map_ks_02{
-  /* background-color: pink; */
-  width:92%;
-  height:200px;
-  margin:0 4% 4% 4%;
-  position: relative;
-  font-size: 16px;
-}
-
-.home_map_01>.home_map_ks>.home_map_ks_02>.name_of_shop{
-  font-size: 21px;
-  color:white;
-  font-weight: bold;
-  position: absolute;
-  top:0;
-  left:0;
-}
-
-.home_map_01>.home_map_ks>.home_map_ks_02>.weekday{
-  font-size: 14px;
-  font-weight: bold;
-  list-style: none;
-  line-height: 1.4;
-  margin:0;
-  color:#DDDDDD;
-  position: absolute;
-  top:0;
-  right:0;
-}
-
-.home_map_01>.home_map_ks>.home_map_ks_02>.tel{
-  font-size: 18px;
-  color:white;
-  font-weight: bold;
-  position: absolute;
-  bottom:27px;
-  left:0;
-}
-
-.home_map_01>.home_map_ks>.home_map_ks_02>.add{
-  font-size: 18px;
-  color:white;
-  font-weight: bold;
-  position: absolute;
-  bottom:0;
-  left:0;
-}

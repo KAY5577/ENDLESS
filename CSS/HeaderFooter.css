@@ -44,14 +44,14 @@ body{
   z-index:20;
 }
 /* ============= RWD : header>all>left (logo位置)============ */
-@media screen and (max-width: 575px){
+@media screen  and (max-width: 379px){
   /* border:3px solid blue; */
   .header>.all>.left>a>img{
-    width:100px;
-    top:57px;
+    width:90px;
+    top:61px;
   }
 } 
-@media screen and (min-width: 576px) and (max-width: 767px){
+@media screen and (min-width: 380px) and (max-width: 767px){
   /* border:3px solid green; */
   .header>.all>.left>a>img{
     width:100px;
@@ -184,11 +184,10 @@ body{
 /* =======================(4)漢堡下方的選單區====================== */
 .header>.all>.right>.right_04{
   width: 100%;
-  background-color: #666666;
+  background-color: rgba(70 , 70, 70, .99);
   position: absolute;
   right:0;
   top:100px;
-  opacity:0.88;
   z-index:15;
   display:none;
 }

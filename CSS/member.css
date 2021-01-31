@@ -1,0 +1,118 @@
+*{
+  box-sizing: border-box;
+}
+
+.member_bg{
+    width:100%;
+    /* border:5px solid red; */
+    height: calc(100vh - 75px);
+    background-image: url("../imgs/member_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.member_bg > .member_all{
+    width:1200px;
+    /* border:5px solid purple; */
+    margin:0 auto;
+    padding-top:100px;
+}
+
+.member_bg > .member_all>h2{
+    margin: 6% auto 3.5% 5px;
+    font-size: 36px;
+    color:#AE0000;
+}
+
+#tab-demo{
+    width:35%;
+    border-radius: 3px;
+    margin:0 auto;
+    /* 水平位移 垂直位移 模糊 擴散 顏色 */
+    box-shadow: 2px 2px 2px .5px #777;
+}
+
+#tab-demo > ul{ 
+    display:block; 
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-align: left;
+    font-size: 0;
+}
+
+#tab-demo > ul > li{ 
+    box-sizing: border-box;
+    display:inline-block; 
+    text-align: center; 
+    /* border:1px solid gray;  */
+    background: #aaa;
+    list-style:none; 
+    margin:0;
+    padding:0;
+    width:50%;
+    height:35px; 
+    cursor: pointer;
+}
+
+
+#tab-demo >  ul > li > a{ 
+    color:#666; 
+    text-decoration:none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+#tab-demo > ul > li.active{ 
+    border-bottom:1px solid white; 
+    background: white;
+}
+
+#tab-demo > .tab-inner{ 
+    clear:both; 
+    color: black;
+    padding: 10% 5%;
+    background-color: white;
+    line-height:60px;
+    text-align: center;
+}
+
+#tab-demo > .tab-inner > label{
+    width:40%;
+    /* border:1px solid red; */
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#tab-demo > .tab-inner > input{
+    width:60%;
+    border:1px solid gray;
+    vertical-align: middle;
+    font-size: 15px;
+    height:30px;
+    margin-left: 10px;
+}
+
+#tab-demo > .tab-inner > button{
+    width:25%;
+    height:30px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: black;
+    border:1px solid black;
+    border-radius: 2px;
+    color:white;
+    cursor: pointer;
+}
+#tab-demo > .tab-inner > button:hover{
+    background-color: #AE0000;
+    border:1px solid #AE0000;
+}
+
+
+
+

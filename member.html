@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-tw" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>ENDLESS|Member</title>
+    <link rel="stylesheet" href="./CSS/HeaderFooter.css">
+    <link rel="stylesheet" href="./CSS/Member.css">
+
+    <script src="./js/jquery-3.5.1.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head> 
+
+<body>  
+<!-- ======================================header 開始======================================= -->
+<!-- ======================================header 開始======================================= -->
+<header class="header">
+  <div class="all">
+<!-- =================header_left 放logo=============== -->
+        <div class="left">
+          <a href="./index.html" class="my_logo"><img src="./imgs/logo.png"></a>
+        </div>
+<!-- ================header_right 放選單=============== -->
+        <div class="right">
+<!-- ==============搜尋bar============== -->
+            <div class="right_01">
+                <div class="search_box">
+                      <form class="search_form" action="./index.html" method="post">
+                          <input type="text" name="" value="" class="search_area" placeholder="請輸入關鍵字">
+                          <button type="button" name="button" class="search_go">GO</button>
+                      </form>
+                </div>
+            </div>
+<!-- ================選單=============== -->
+            <div class="right_02">
+                  <ul class="menu_text_list">
+                      <a href="./My_women.html"><li class="women">女 裝</li></a>
+                      <a href="./My_men.html"><li class="man">男 裝</li></a>
+                      <a href="#"><li class="kids">童 裝</li></a>
+                      <a href="#"><li class="accessories">配 件</li></a>
+                      <a href="./MyShop.html"><li class="map">門市資訊</li></a>
+                      <a href="./ContactUs.html"><li class="contact">聯絡我們</li></a>
+                      <a href="AboutUs.html"><li class="about_endless">關於我們</li></a>
+                  </ul>
+
+                  <div class="menu_icon">
+                      <a href="#"><img src="./imgs/cart.png" alt=""></a>
+                      <a href="./MyFavorite.html"><img src="./imgs/heart.png" alt=""></a>
+                      <a class="number" href="#" ><img src="./imgs/number.png" alt=""></a>
+                      
+                  </div>
+            </div>
+<!-- ==============漢堡按鈕============== -->
+            <div class="right_03">
+                    <img src="./imgs/burger.png" alt="" class="burger_btn">
+            </div>
+<!-- ==============漢堡選單============== -->
+            <div class="right_04">
+                <ul>
+                    <a href="./My_women.html"><li>女 裝</li></a>
+                    <a href="./My_men.html"><li>男 裝</li></a>
+                    <a href="#"><li>童 裝</li></a>
+                    <a href="#"><li>配 件</li></a>
+                    <a href="./MyShop.html"><li>門市資訊</li></a>
+                    <a href="./ContactUs.html"><li>聯絡我們</li></a>
+                    <a href="AboutUs.html"><li>關於我們</li></a>
+                </ul>
+            </div>
+<!-- ================================ -->
+      </div>
+  </div>
+</header>
+<!-- ===========jQuery控制漢保選單出現===================== -->
+
+<script>
+    $(document).ready(function(){
+         $('.right_03').click(function(){
+              $('.right_04').slideToggle();
+              // $('.right_04').fadeToggle();
+        })
+    });
+</script>
+<!-- ======================================header 結束======================================= -->
+<!-- ======================================header 結束======================================= -->
+
+
+
+
+<!-- ===============================member========================================== -->
+
+<div class="member_bg">
+    <div class="member_all">
+            <h2 class="main_taitle">會員中心</h2>
+
+            <div class="member_form_area">
+
+                <form action="" method="get" class="form">
+
+                    <div id="tab-demo">
+                        <ul class="tab-title">
+                            <li><a href="#tab01">會員登入</a></li>
+                            <li><a href="#tab02">註冊</a></li>
+                        </ul>
+                
+                        <div id="tab01" class="tab-inner">
+                            <label for="">帳號:</label>
+                            <input type="text" placeholder="請輸入您的手機號碼">
+                            <br>
+                            <label for="">密碼:</label>
+                            <input type="text" placeholder="請輸入密碼">
+                            <br>
+                            <button>登入</button>
+                        </div>
+                        
+                        <div id="tab02" class="tab-inner">
+                            <label for="">帳號:</label>
+                            <input type="text" placeholder="請輸入您的手機號碼">
+                            <br>
+                            <label for="">密碼:</label>
+                            <input type="text" placeholder="請輸入密碼">
+                            <br>
+                            <button>註冊</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>    
+    </div>           
+</div> 
+
+<!-- =========================================footer======================================== -->
+
+<footer>
+  <p>copyright &copy All Rights Reserved</p>
+</footer>
+
+<!-- ===========jQuery控制切換:登入or註冊===================== -->
+        <script>
+            $(function(){
+            var $li = $('ul.tab-title li');
+            $($li. eq(0) .addClass('active').find('a').attr('href')).siblings('.tab-inner').hide();
+
+            $li.click(function(){
+                $($(this).find('a'). attr ('href')).show().siblings ('.tab-inner').hide();
+                $(this).addClass('active'). siblings ('.active').removeClass('active');
+            });
+        });
+        </script>
+
+</body>
+</html>
