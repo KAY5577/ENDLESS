@@ -10,7 +10,6 @@ body{
 
 .product_all{
   width:100%;
-  position:relative;
 }
 
 .product_all>.product_bg_2{
@@ -23,16 +22,18 @@ body{
   background-color: rgba(0, 0, 0, .2);
 }
 
-/* ========================左側款式圖區=========================== */
-/* ========================左側款式圖區=========================== */
+
 .product_all>.product_bg_1{
   width:1200px;
   height:calc(100vh - 75px);
   margin:0 auto;
-  border:3px solid purple;
+  /* border:3px solid purple; */
   padding-top: 12%;
   position: relative;
 }
+
+/* ========================左側款式圖區=========================== */
+/* ========================左側款式圖區=========================== */
 
 .product_all>.product_bg_1>.product_left{
   width:60%;
@@ -40,12 +41,13 @@ body{
   border:1px solid white;
   /* 水平位移 垂直位移 模糊 擴散 顏色 */
   box-shadow: 7px 6px 3px 2px #888;
-  margin-left: 7%;
+  position: absolute;
+  top:26%;
+  left:5%;
 }
 
 .product_all>.product_bg_1>.product_left>.product_left_01{
   width:99%;
-  /* border:2px solid pink; */
   background-color: white;
   margin:0 auto;
   display: flex;
@@ -76,8 +78,8 @@ body{
   background-color: white;
   border:1px solid white;
   position: absolute;
-  top:47%;
-  left:60%;
+  top:50%;
+  right:5%;
   /* 水平位移 垂直位移 模糊 擴散 顏色 */
   box-shadow: 7px 6px 3px 2px #888;
 }
@@ -90,6 +92,7 @@ body{
   padding: 2.5% 7%;
 }
 
+/* 款式名稱 價格 說明 編號 文字設定 */
 .product_all>.product_bg_1>.product_right>.product_right_01>p{
   font-size: 16px;
   color: #444444;
@@ -99,18 +102,19 @@ body{
 }
 
 .style_name, .style_price, .style_price{
-  font-weight: bold;
+  font-weight: 550;
   color:black;
 }
 
 /* ==============右側 表單區================ */
 /* ==============右側 表單區================ */
 
-
+/* label: 顏色 尺碼 數是 文字設定 */
 .product_all>.product_bg_1>.product_right>.product_right_01>.the_form_area>.form_of_product{
   font-size: 16px;
   line-height: 30px;
-  color: red;
+  color:#444444;
+  vertical-align: top;
 }
 
 .product_all>.product_bg_1>.product_right>.product_right_01>.the_form_area>.form_of_product>img{
@@ -128,51 +132,191 @@ body{
   transform: scale(1.1);
 }
 
+/* 下拉選單文字設定 */
 .product_all>.product_bg_1>.product_right>.product_right_01>.the_form_area>.form_of_product>select{
   width:18%;
   margin-left:3%;
+  font-size: 16px;
+  line-height: 30px;
+  vertical-align: top;
 }
 
+/* 購物車 & 最愛 文字設定 */
 .product_all>.product_bg_1>.product_right>.product_right_01>.the_form_area>.form_of_product>button{
-  width:33%;
+  width:40%;
+  padding:0;
   margin-right:3%;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.product_all>.product_bg_1>.product_right>.product_right_01>.the_form_area>.form_of_product>button:hover{
+  background-color: black;
+  color:white;
+  border:1px solid black;
 }
 
 
 /* ===================================RWD========================================== */
-@media screen and (min-width: 320px) and (max-width: 419px){
+/* @media screen and (min-width: 320px) and (max-width: 419px){
   .product_all>.product_bg_1{
     border:5px solid pink;
-    /* width: 100%; */
+    width: 100%;
 } 
-}
+} */
 
-@media screen and (min-width: 420px) and (max-width: 575px){
-  .product_all>.product_bg_1{
-    border:5px solid blue;
-    /* width: 100%; */
-  } 
+@media screen and (max-width: 575px){
+    .product_all>.product_bg_1{
+      /* border:5px solid blue; */
+      width: 100%;
+    } 
+
+    /* label: 顏色 尺碼 數是 文字設定 */
+    .product_all>.product_bg_1>.product_right>.product_right_01>.the_form_area>.form_of_product{
+      font-size: 12px;
+      line-height: 22px;
+    }
+
+    /* 下拉選單文字設定 */
+    .product_all>.product_bg_1>.product_right>.product_right_01>.the_form_area>.form_of_product>select{
+      font-size: 12px;
+      line-height: 22px;
+    }
+
+    /* 購物車 & 最愛 文字設定 */
+    .product_all>.product_bg_1>.product_right>.product_right_01>.the_form_area>.form_of_product>button{
+      font-size: 12px;
+      line-height: 22px;
+    }
+    /* =========== 左側款式圖區 =========== */
+    .product_all>.product_bg_1>.product_left{
+      width:95%;
+      position:absolute;
+      top:22%;
+      left:2.5%;
+    }
+
+    /* =========== 右側 介紹區 =========== */
+    .product_all>.product_bg_1>.product_right{
+      width:95%;
+      position:absolute;
+      top:52%;
+      right:2.5%;
+    }
   
 } 
 @media screen and (min-width: 576px) and (max-width: 767px){
-  .product_all>.product_bg_1{
-    border:5px solid green;
-    /* width: 560px; */
-  } 
- 
+    .product_all>.product_bg_1{
+      /* border:5px solid green; */
+      width: 560px;
+    } 
+    /* label: 顏色 尺碼 數是 文字設定 */
+    .product_all>.product_bg_1>.product_right>.product_right_01>.the_form_area>.form_of_product{
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    /* 下拉選單文字設定 */
+    .product_all>.product_bg_1>.product_right>.product_right_01>.the_form_area>.form_of_product>select{
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    /* 購物車 & 最愛 文字設定 */
+    .product_all>.product_bg_1>.product_right>.product_right_01>.the_form_area>.form_of_product>button{
+      font-size: 14px;
+      line-height: 24px;
+    }
+    /* =========== 左側款式圖區 =========== */
+    .product_all>.product_bg_1>.product_left{
+      width:90%;
+      position:absolute;
+      top:18%;
+      left:5%;
+    }
+
+    /* =========== 右側 介紹區 =========== */
+    .product_all>.product_bg_1>.product_right{
+      width:64%;
+      position:absolute;
+      top:55%;
+      right:16%;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 991px){
-  .product_all>.product_bg_1{
-    border:5px solid yellow;
-    /* width: 750px; */
-  } 
- 
+    .product_all>.product_bg_1{
+      /* border:5px solid yellow; */
+      width: 750px;
+    } 
+    /* label: 顏色 尺碼 數是 文字設定 */
+    .product_all>.product_bg_1>.product_right>.product_right_01>.the_form_area>.form_of_product{
+      font-size: 14px;
+      line-height: 26px;
+    }
+
+    /* 下拉選單文字設定 */
+    .product_all>.product_bg_1>.product_right>.product_right_01>.the_form_area>.form_of_product>select{
+      font-size: 14px;
+      line-height: 26px;
+    }
+
+    /* 購物車 & 最愛 文字設定 */
+    .product_all>.product_bg_1>.product_right>.product_right_01>.the_form_area>.form_of_product>button{
+      font-size: 14px;
+      line-height: 26px;
+    }
+    /* =========== 左側款式圖區 =========== */
+    .product_all>.product_bg_1>.product_left{
+      width:75%;
+      position:absolute;
+      top:23%;
+      left:2%;
+    }
+
+    /* =========== 右側 介紹區 =========== */
+    .product_all>.product_bg_1>.product_right{
+      width:43%;
+      position:absolute;
+      top:55%;
+      right:2%;
+    }
+  
 }
 @media screen and (min-width: 992px) and (max-width: 1199px){
-  .product_all>.product_bg_1{
-    border:5px solid orange;
-    /* width: 980px; */
-  } 
+    .product_all>.product_bg_1{
+      /* border:5px solid orange; */
+      width: 980px;
+    } 
+    /* label: 顏色 尺碼 數是 文字設定 */
+    .product_all>.product_bg_1>.product_right>.product_right_01>.the_form_area>.form_of_product{
+      font-size: 14px;
+      line-height: 26px;
+    }
+
+    /* 下拉選單文字設定 */
+    .product_all>.product_bg_1>.product_right>.product_right_01>.the_form_area>.form_of_product>select{
+      font-size: 14px;
+      line-height: 26px;
+    }
+
+    /* 購物車 & 最愛 文字設定 */
+    .product_all>.product_bg_1>.product_right>.product_right_01>.the_form_area>.form_of_product>button{
+      font-size: 14px;
+      line-height: 26px;
+    }
+    /* =========== 左側款式圖區 =========== */
+    .product_all>.product_bg_1>.product_left{
+      width:63%;
+    }
+
+    /* =========== 右側 介紹區 =========== */
+    .product_all>.product_bg_1>.product_right{
+      width:32%;
+    }
 
 }
+
+
+
+
 
