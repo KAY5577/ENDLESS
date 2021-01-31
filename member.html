@@ -95,7 +95,7 @@
     <div class="member_all">
             <h2 class="main_taitle">會員中心</h2>
 
-            <div class="member_form_area">
+            <div class="member_form_area" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="1000">
 
                 <form action="" method="get" class="form">
 
@@ -107,7 +107,7 @@
                 
                         <div id="tab01" class="tab-inner">
                             <label for="">帳號:</label>
-                            <input type="text" placeholder="請輸入您的手機號碼">
+                            <input type="text" placeholder="請以手機號碼登入">
                             <br>
                             <label for="">密碼:</label>
                             <input type="text" placeholder="請輸入密碼">
@@ -117,7 +117,7 @@
                         
                         <div id="tab02" class="tab-inner">
                             <label for="">帳號:</label>
-                            <input type="text" placeholder="請輸入您的手機號碼">
+                            <input type="text" placeholder="請以手機號碼註冊">
                             <br>
                             <label for="">密碼:</label>
                             <input type="text" placeholder="請輸入密碼">
@@ -134,20 +134,26 @@
 <!-- =========================================footer======================================== -->
 
 <footer>
-  <p>copyright &copy All Rights Reserved</p>
+    <p>copyright &copy All Rights Reserved</p>
 </footer>
+
 
 <!-- ===========jQuery控制切換:登入or註冊===================== -->
         <script>
             $(function(){
-            var $li = $('ul.tab-title li');
-            $($li. eq(0) .addClass('active').find('a').attr('href')).siblings('.tab-inner').hide();
-
-            $li.click(function(){
-                $($(this).find('a'). attr ('href')).show().siblings ('.tab-inner').hide();
-                $(this).addClass('active'). siblings ('.active').removeClass('active');
+                var $li = $('ul.tab-title li');
+                $($li. eq(0) .addClass('active').find('a').attr('href')).siblings('.tab-inner').hide();
+                
+                $li.click(function(){
+                    $($(this).find('a'). attr ('href')).show().siblings ('.tab-inner').hide();
+                    $(this).addClass('active'). siblings ('.active').removeClass('active');
+                });
             });
-        });
+        </script>
+
+
+        <script>
+            AOS.init();
         </script>
 
 </body>
