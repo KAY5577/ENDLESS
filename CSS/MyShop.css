@@ -64,12 +64,15 @@ h2{
 /* =====小div: 放各門市(地圖)(台北&高雄)===== */
 .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.map_box{
   width:30%;
+  height:75%;
   border-radius: 50%;
   overflow: hidden;
   position:absolute;
   top:50%;
   left:20%;
   transform: translateY(-50%);
+   /* 水平位移 垂直位移 模糊 擴散 顏色 */
+  box-shadow: 2px 2px 2px 2px #555;
 }
 
 .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop>.map_box>img{
@@ -137,13 +140,16 @@ h2{
 /* =====小div: 放各門市(地圖)(台中)===== */
 .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.map_box{
   width:30%;
+  height:75%;
   border-radius: 50%;
   overflow: hidden;
   position:absolute;
   top:50%;
   right:20%;
   transform: translateY(-50%);
+  box-shadow: 2px 2px 2px 2px #aaa;
 }
+
 
 .myshop_bg>.myshop_bg_color>.myshop_all>.shops_box>.each_shop_b>.map_box>img{
   width:100%;
