@@ -676,7 +676,11 @@ h2{
 /* =======大背框100%=======  */
 .newaccessories_area_bg_all{
   width:100%;
-  background-color: #777777;
+  /* background-color: #777777; */
+  background: -webkit-linear-gradient(#888888,#333333);
+  background: -o-linear-gradient(#888888,#333333);
+  background: -moz-linear-gradient(#888888,#333333);
+  background: linear-gradient(#888888,#333333);
 }
 
 /* =======背框1200px=======  */
