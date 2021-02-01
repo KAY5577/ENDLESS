@@ -14,7 +14,6 @@ body{
 
 .bg_all{
   width:100%;
-  border:3px solid green;
 }
 
 .bg_all>.collection_all{
@@ -198,6 +197,9 @@ body{
     .bg_all>.collection_all>.collection_main>.collection_box>.collection_new_a, .collection_new_b{
       width:80%;
     }
+    h3{
+      font-size: 24px;
+    }
 } 
 
 @media screen and (min-width: 420px) and (max-width: 575px){
@@ -214,6 +216,9 @@ body{
     .bg_all>.collection_all>.collection_main>.collection_box>.collection_new_a, .collection_new_b{
       width:60%;
     }
+    h3{
+      font-size: 24px;
+    }
 } 
 @media screen and (min-width: 576px) and (max-width: 767px){
     .bg_all>.collection_all{
@@ -229,6 +234,9 @@ body{
     .bg_all>.collection_all>.collection_main>.collection_box>.collection_new_a, .collection_new_b{
       width:43%;
     }
+    h3{
+      font-size: 24px;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 991px){
     .bg_all>.collection_all{
@@ -243,6 +251,9 @@ body{
     }
     .bg_all>.collection_all>.collection_main>.collection_box>.collection_new_a, .collection_new_b{
       width:30%;
+    }
+    h3{
+      font-size: 24px;
     }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px){
